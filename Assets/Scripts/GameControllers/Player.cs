@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     // Referencias propias
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private Animator animator;
 
     // INPUTS SISTEM VARIABLES
     [Header("Input")]
@@ -98,6 +99,8 @@ public class Player : MonoBehaviour
     {
         if (currentInput == true)
         {
+            animator.SetTrigger("Move");
+
             Vector3 movement = inputDirection.normalized * speed * Time.deltaTime;
             transform.position += (movement * Time.deltaTime * speed);
 
@@ -107,7 +110,11 @@ public class Player : MonoBehaviour
                 spriteRenderer.flipX = inputDirection.x < 0 ? true : inputDirection.x > 0 ? false : spriteRenderer.flipX;
                 lastInputDirection = inputDirection;
             }
+
+            return;
         }
+
+        animator.SetTrigger("Stop");
     }
 
 

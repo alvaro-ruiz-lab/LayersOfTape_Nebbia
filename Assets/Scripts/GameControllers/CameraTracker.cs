@@ -9,7 +9,7 @@ public class CameraTracker : MonoBehaviour
 
 
 
-    private void Awake()
+    private void Start()
     {
         if (target == null)
         {
@@ -23,7 +23,9 @@ public class CameraTracker : MonoBehaviour
     {
         t = cameraSpeed * Time.deltaTime;
         Mathf.Clamp01(t);
-        transform.position = Vector2.Lerp (transform.position, target.position, t);
+
+        Vector3 newPos = new Vector3(target.position.x, target.position.y, -10f);
+        transform.position = Vector3.Lerp (transform.position, newPos, t);
         transform.rotation = Quaternion.Lerp (transform.rotation, target.rotation, t);
     }
 }
