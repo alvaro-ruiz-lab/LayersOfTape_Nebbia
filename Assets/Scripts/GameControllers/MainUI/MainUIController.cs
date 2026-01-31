@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainUIController : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class MainUIController : MonoBehaviour
     [SerializeField] private UIInventoryManager uIInventoryManager;
     [SerializeField] private OxygenBar oxygenBar;
     [SerializeField] private ConversationManager conversationManager;
+    [SerializeField] private GameObject gameOverPanel;
 
 
 
@@ -27,5 +29,19 @@ public class MainUIController : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+
+
+    public void ShowGameOverScreen()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        gameOverPanel.SetActive(false);
+        Player.Oxygen.RefillOxygen(100);
+        SceneManager.LoadScene("Start");
     }
 }

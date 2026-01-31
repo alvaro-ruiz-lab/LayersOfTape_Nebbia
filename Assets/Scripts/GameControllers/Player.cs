@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AlvaroRuiz.Projects.GameControll.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Animator animator;
+    [SerializeField] private Oxygen oxygen;
     [SerializeField] private Transform triggerRotator;
 
     // INPUTS SISTEM VARIABLES
@@ -25,13 +27,17 @@ public class Player : MonoBehaviour
     [NonSerialized] public NPC talkableNPC;
     [NonSerialized] public bool isTalking;
 
+    // SFX
+    [Header("SFX")]
+    [SerializeField] private AudioClip walkClip;
+
     // Only item names
     private List<string> inventory = new List<string>();
 
     // Propiedades
     public static Player Instance { get; private set; }
     public static PlayerInput PI { get { return Instance.playerInput; } }
-
+    public static Oxygen Oxygen => Instance.oxygen;
 
 
     void Awake()
@@ -104,6 +110,7 @@ public class Player : MonoBehaviour
         if (currentInput && !isTalking)
         {
             animator.SetTrigger("Move");
+            AudioController.PlaySound(walkClip);
 
             var direction = inputDirection.normalized;
             Vector3 movement = direction * speed * Time.deltaTime;

@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 4097399291463232759}
   - component: {fileID: 8638112252442718936}
   - component: {fileID: 8023335640439499145}
+  - component: {fileID: 4399439820579218868}
   - component: {fileID: 1790334488385106058}
   - component: {fileID: 1737691569151297231}
   - component: {fileID: 7135151969137266139}
@@ -147,8 +148,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 5953300146449247146}
+  m_Children: [{fileID: 5953300146449247146}]
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8638112252442718936
@@ -221,8 +221,23 @@ MonoBehaviour:
   spriteRenderer: {fileID: 8638112252442718936}
   playerInput: {fileID: 1790334488385106058}
   animator: {fileID: 1737691569151297231}
+  oxygen: {fileID: 4399439820579218868}
   triggerRotator: {fileID: 5953300146449247146}
   speed: 7
+  walkClip: {fileID: 8300000, guid: d60c01fcf8d8b664ab445dccf929cd29, type: 3}
+--- !u!114 &4399439820579218868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212717627628556941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8def91e6b72234e94f0fc69adea8d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consumptionTime: 300
 --- !u!114 &1790334488385106058
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,18 +13,20 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         // Instancias
         /* Referencias de los clips */
         [Header("Clips de Musica")]
-        [SerializeField] private AudioClip templateMusicClip;
+        [SerializeField] private AudioClip loopMusicClip;
 
         /* Clips de efectos de sonido */
         [Header("Clips de SFX")]
         [SerializeField] private AudioClip templateSFXClip;
 
         // Variables necesarias
-        private AudioClip currentSoundClip;
-        private float currentSoundClipEndTime;
+        private static AudioClip currentSoundClip;
+        private static float currentSoundClipEndTime;
 
         // Propiedades
         public static AudioController Instance { get; private set; }
+        public static AudioSource MusicSource => Instance.musicSource;
+        public static AudioSource SFXSource => Instance.sFXSource;
 
 
 
@@ -42,6 +44,13 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
 
 
 
+        public static void PlayInitMusic()
+        {
+            PlayMusic(Instance.loopMusicClip);
+        }
+
+
+
         // HERRAMIENTAS-------------------------------------------------------------
         private void CoroutineStopper(Coroutine currentCoroutine)
         {
@@ -55,16 +64,16 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
 
 
         // Poner MUSICA
-        public void PlayMusic(AudioClip newMusicClip)
+        public static void PlayMusic(AudioClip newMusicClip)
         {
             //Por si el cambio de escena te lleva a una con el mismo clip
-            if (musicSource.clip == newMusicClip) return;
-            musicSource.clip = newMusicClip;
-            musicSource.Play();
+            if (MusicSource.clip == newMusicClip) return;
+            MusicSource.clip = newMusicClip;
+            MusicSource.Play();
         }
 
         // Usar SFX
-        public void PlaySound(AudioClip newSoundClip)
+        public static void PlaySound(AudioClip newSoundClip)
         {
             // Si es el mismo clip y todavia esta sonando, no repetir
             if (currentSoundClip == newSoundClip && Time.time < currentSoundClipEndTime) return;
@@ -72,7 +81,7 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
             currentSoundClip = newSoundClip;
             currentSoundClipEndTime = Time.time + newSoundClip.length;
 
-            sFXSource.PlayOneShot(newSoundClip);
+            SFXSource.PlayOneShot(newSoundClip);
         }
 
 
