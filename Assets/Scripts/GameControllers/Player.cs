@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -5,14 +6,27 @@ public class Player : MonoBehaviour
     /// <summary>
     /// NOMBRE: Gio Catore
     /// </summary>
-    
+
+    // Only item names
+    private List<string> inventory = new List<string>();
+
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
-    void Update()
+    // For tangible items
+    void PickUpItem(SceneItem item)
     {
-        
+        string name = item.ItemName;
+        inventory.Add(name);
+        item.gameObject.SetActive(false);
+        // TODO Agregar al Inventario(UI). Crear una instancia del prefab UIItem con el nombre del item.
+    }
+
+    // For converasion (items). conversationName must match with InventoryItem.itemName
+    void storeConversation(string conversationName)
+    {
+        inventory.Add(conversationName);
     }
 }

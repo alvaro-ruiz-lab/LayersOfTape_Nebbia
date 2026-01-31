@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UniversalGameController : MonoBehaviour
 {
-    // Propiedades
+    // Singleton
     public static UniversalGameController Instance { get; private set; }
+    [SerializeField] private InventoryItemList itemData;
+    public static InventoryItemList ItemData => Instance.itemData;
 
 
 
@@ -21,7 +24,6 @@ public class UniversalGameController : MonoBehaviour
 
     void Start()
     {
-        
     }
 
 
