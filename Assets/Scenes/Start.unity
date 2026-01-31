@@ -1424,7 +1424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: bf87e891a4a107f489388397e1d05372, type: 2}
-  npcData: {fileID: 0}
+  npcData: {fileID: 11400000, guid: fa3b3f1a60f2c134e8a2de31d826638f, type: 2}
 --- !u!4 &1686369498
 Transform:
   m_ObjectHideFlags: 0

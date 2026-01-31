@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Animator animator;
+    [SerializeField] private Transform triggerRotator;
 
     // INPUTS SISTEM VARIABLES
     [Header("Input")]
@@ -20,6 +22,8 @@ public class Player : MonoBehaviour
     private Vector3 inputDirection;
     private bool currentInput;
     private Vector2 lastInputDirection;
+    [NonSerialized] public NPC talkableNPC;
+    [NonSerialized] public bool isTalking;
 
     // Only item names
     private List<string> inventory = new List<string>();
@@ -97,18 +101,24 @@ public class Player : MonoBehaviour
 
     void MovePlayer()
     {
-        if (currentInput == true)
+        if (currentInput && !isTalking)
         {
             animator.SetTrigger("Move");
 
-            Vector3 movement = inputDirection.normalized * speed * Time.deltaTime;
+            var direction = inputDirection.normalized;
+            Vector3 movement = direction * speed * Time.deltaTime;
             transform.position += (movement * Time.deltaTime * speed);
 
-            bool changeDirection = lastInputDirection.x != inputDirection.x;
+            bool changeDirection = Math.Sign(lastInputDirection.x) != Math.Sign(inputDirection.x);
             if (changeDirection)
             {
                 spriteRenderer.flipX = inputDirection.x < 0 ? true : inputDirection.x > 0 ? false : spriteRenderer.flipX;
                 lastInputDirection = inputDirection;
+            }
+
+            if (inputDirection.sqrMagnitude > 0.0001f)
+            {
+                triggerRotator.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg +90f, Vector3.forward);
             }
 
             return;
@@ -121,12 +131,18 @@ public class Player : MonoBehaviour
 
     private void OnInteract()
     {
-
-        // Aqui creo que deberiamos chequear triggers de personajes o de objetos
         Debug.Log("Interacted");
+        if (isTalking)
+        {
+            talkableNPC.Talk();
+        }
+        else if (talkableNPC)
+        {
+            TalkToNPC(talkableNPC);
+        }
     }
 
-    void TalkToNPC(NPC npc)
+    private void TalkToNPC(NPC npc)
     {
         var conversationItem = npc.Talk();
         if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);

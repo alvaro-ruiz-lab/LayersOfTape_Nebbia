@@ -61,6 +61,10 @@ public class NPCData
         {
             currentConversationIndex = (currentConversationIndex + 1) % conversations.Length;
         }
+        else if(currentConversationIndex == conversations.Length - 1)
+        {
+            currentConversationIndex = -1;
+        }
     }
 
 }

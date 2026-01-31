@@ -17,11 +17,11 @@
                 },
                 {
                     "name": "Interact",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "bf70eeff-a2ff-4420-9016-b5a905a723f3",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 }
             ],
@@ -39,7 +39,7 @@
                 },
                 {
                     "name": "",
-                    "id": "622635b8-96fa-4677-8f66-ed6f388705a9",
+                    "id": "92ad0729-2c7f-481f-9ec6-3acf386fd112",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",

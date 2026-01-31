@@ -21,6 +21,10 @@ MonoBehaviour:
       - Hola
       - "P\xE9gate un tape"
       itemGiven: testiConvTape
+    - lines:
+      - Hey!
+      - 'Esta noche no duermes c:'
+      itemGiven: 
   - name: Spett Atore
     loopConversation: 0
     npcIconSprite: {fileID: 0}

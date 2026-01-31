@@ -34,6 +34,7 @@ public class ConversationManager : MonoBehaviour
 
     public void EndConversation()
     {
+        Player.Instance.isTalking = false;
         gameObject.SetActive(false);
     }
 }
