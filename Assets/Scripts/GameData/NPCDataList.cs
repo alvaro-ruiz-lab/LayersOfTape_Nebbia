@@ -1,3 +1,76 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "NPCData", menuName = "Scriptable Objects/NPCData")]
+public class NPCDataList : ScriptableObject
+{
+    [SerializeField] private List<NPCData> npcList;
+    public IReadOnlyList<NPCData> Items => npcList;
+
+    public bool TryGetByName(string name, out NPCData npc)
+    {
+        npc = null;
+        if (string.IsNullOrWhiteSpace(name)) return false;
+
+        for (int i = 0; i < npcList.Count; i++)
+        {
+            if (string.Equals(npcList[i].name, name, StringComparison.OrdinalIgnoreCase))
+            {
+                npc = npcList[i];
+                return true;
+            }
+        }
+        return false;
+    }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        for (int i = 0; i < npcList.Count; i++)
+        {
+            var it = npcList[i];
+            if (it == null) continue;
+
+            var key = (it.name ?? "").Trim();
+            if (key.Length == 0) continue;
+
+            if (!seen.Add(key))
+            {
+                Debug.LogError($"Duplicate name '{key}' in {name} at index {i}. name must be unique.", this);
+            }
+        }
+    }
+#endif
+}
+
+[Serializable]
+public class NPCData
+{
+    public string name;
+    public bool loopConversation;
+    public Sprite npcIconSprite;
+    public Conversation[] conversations;
+    [NonSerialized] public int currentConversationIndex;
+
+    public void IncreaseConvIndex()
+    {
+        if (currentConversationIndex < conversations.Length - 1 || loopConversation)
+        {
+            currentConversationIndex = (currentConversationIndex + 1) % conversations.Length;
+        }
+    }
+
+}
+
+[Serializable]
+public class Conversation
+{
+    public string[] lines;
+    public string itemGiven;
+}
 
 // 1
     /// <summary>
