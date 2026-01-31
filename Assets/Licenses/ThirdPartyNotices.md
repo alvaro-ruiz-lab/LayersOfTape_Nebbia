@@ -5,110 +5,53 @@ The following acknowledgments and license terms apply.
 
 ---
 
-## Software Libraries Credits
+## Sprites Credits
 
-### {{Library Name 1}}
-- **Version:** {{version}}  
-- **Release date:** {{release date}}  
-- **Copyright:** {{copyright}}  
-- **Authors:** {{authors}}  
-- **License:** {{license name}}  
-- **Source:** {{URL or repository link}}  
-
-Additional notes:  
-{{Additional notes on distribution or special terms}}
-
-The underlying source code is licensed under the **{{license}}**.  
-The full license text is provided in the `ThirdPartyLicenses` folder.
-
----
-
-## UI Assets Credits
-
-### {{UI Asset Name}}
-- **Version:** {{version}}  
-- **Release date:** {{release date}}  
-- **Author / Publisher:** {{author or company}}  
-- **Website:** {{website URL}}  
-- **Contact:** {{email or link}}  
+### The Library - Indoor Asset Pack (24x24)
+- **Version:** 1.0  
+- **Release date:** February 26, 2025 
+- **Author:** Andy
+- **Website:** [Website](https://sparksandpixels.itch.io/indoor-library-assetpack)  
+- **Contact:** [@sparksandpixels](https://sparksandpixels.carrd.co/)
 
 Distribution and license:  
-- **Store / Platform:** {{e.g. Unity Asset Store}}  
-- **License / EULA:** {{license name or link}}  
-- **License type (if applicable):** {{e.g. Extension Asset, Single Entity, etc.}}
+- **Store / Platform:** itch.io  
+- **License:** Custom free asset license (as described on the itch.io page)  
+- **License type (if applicable):** Free asset with usage restrictions and mandatory attribution  
 
 Additional notes:  
-{{Additional notes on distribution or special terms}}
+This asset pack contains over 35 pixel art assets intended for top-down indoor library scenes.
+Animations and characters are not included, except for an optional animated grandfather clock available as a separate paid add-on.
 
-The underlying source code is licensed under the **{{license}}**.  
-The full license text is provided in the `ThirdPartyLicenses` folder.
+You are allowed to:
+- Use the assets in personal and commercial games
+- Modify the assets to fit your project
 
----
+You are not allowed to:
+- Resell or redistribute the assets, even if modified
+- Use the assets in products other than games without explicit permission
+- Claim authorship of the assets
 
-## Particles Assets Credits
-
-### {{Particles Asset Name}}
-- **Version:** {{version}}  
-- **Release date:** {{release date}}  
-- **Author:** {{author or studio}}  
-- **Website:** {{website URL}}  
-- **Contact:** {{contact email or link}}  
-
-Distribution and license:  
-- **Store / Platform:** {{e.g. Unity Asset Store}}  
-- **License / EULA:** {{license name or link}}  
-- **License type (if applicable):** {{license type}}
-
-Additional notes:  
-{{Additional notes on distribution or special terms}}
-
-The underlying source code is licensed under the **{{license}}**.  
-The full license text is provided in the `ThirdPartyLicenses` folder.
-
----
-
-## Materials and Shaders Credits
-
-### {{Shader / Material Package Name}}
-- **Version:** {{version}}  
-- **Release date:** {{release date}}  
-- **Author:** {{author or studio}}  
-- **Website:** {{website URL}}  
-- **Contact:** {{contact email or link}}  
-
-Distribution and license:  
-- **Store / Platform:** {{e.g. Unity Asset Store}}  
-- **License / EULA:** {{license name or link}}  
-- **License type (if applicable):** {{license type}}  
-
-This asset may include third-party code or resources:
-
-#### {{Included Dependency Name 1}}
-- **Version:** {{version}}  
-- **Release date:** {{release date}}  
-- **Copyright:** {{copyright}}  
-- **License:** {{license name}}  
-
-Additional notes:  
-{{Additional notes on distribution or special terms}}
-
-The underlying source code is licensed under the **{{license}}**.  
+Attribution is required in any published or commercial project using these assets.
+The underlying source code is licensed under the **Sparks & Pixels Custom Asset License**.  
 The full license text is provided in the `ThirdPartyLicenses` folder.
 
 ---
 
 ## Fonts Credits
 
-### Font: {{Font Name}}
-- **Version:** {{version or N/A}}  
-- **Release date:** {{release date or N/A}}  
-- **Designed by:** {{designer}}  
-- **Publisher / Foundry:** {{publisher}}  
-- **Source:** {{store / website URL}}  
-- **License:** {{license name or type, e.g. desktop, webfont, app embedding}}  
+### Font: Skranji
+- **Version:** N/A 
+- **Release date:** N/A  
+- **Designed by:** Neapolitan 
+- **Publisher / Foundry:** Font Diner  
+- **Source:** [Website](https://fonts.google.com/specimen/Skranji?categoryFilters=Feeling:%2FExpressive%2FRugged)  
+- **License:** SIL Open Font License v1.1 (OFL)  
 
 Additional notes:  
-{{Additional notes on distribution or special terms}}
+This font may be used, modified, embedded, and redistributed in commercial and non-commercial projects, including games and applications.
+The font may not be sold by itself, and any modified versions must not use the Reserved Font Name “Skranji” without explicit permission.
+Attribution and inclusion of the license text are required when redistributing the font files.
 
-The underlying source code is licensed under the **{{license}}**.  
+The underlying source code is licensed under the **SIL Open Font License v1.1.**
 The full license text is provided in the `ThirdPartyLicenses` folder.
