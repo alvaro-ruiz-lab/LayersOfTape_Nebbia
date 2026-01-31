@@ -12,31 +12,21 @@ public class ConversationManager : MonoBehaviour
 
 
 
-    public void SetGameContextInfo(string text)
-    {
-        conversationBg.color = new Color(0, 0, 0, 0.75f);
-
-        conversationText.color = Color.white;
-        conversationText.text = text;
-
-        actionsButtonsPanel.SetActive(false);
-
-        speakerImg.gameObject.SetActive(false);
-    }
-
-
-
     public void SetConversationText(Sprite speakerFace, string text, bool readyToAction)
     {
-        conversationBg.color = Color.white;
+        gameObject.SetActive(true);
 
-        conversationText.color = Color.black;
+        bool isAConversation = speakerFace != null; // Si no hay imagen de hablante, es solo texto
+
+        conversationBg.color = isAConversation ? Color.white : new Color(0, 0, 0, 0.75f);
+
+        conversationText.color = isAConversation ? Color.black : Color.white;
         conversationText.text = text;
 
         actionsButtonsPanel.SetActive(readyToAction);
 
-        speakerImg.gameObject.SetActive(true);
-        if (speakerImg.sprite != speakerFace)
+        speakerImg.gameObject.SetActive(isAConversation);
+        if (isAConversation && speakerImg.sprite != speakerFace)
             speakerImg.sprite = speakerFace;
     }
 

@@ -10,11 +10,35 @@ public class Player : MonoBehaviour
     // Only item names
     private List<string> inventory = new List<string>();
 
+    // Propiedad
+    public static Player Instance { get; private set; }
 
 
-    void Start()
+
+    void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Start()
+    {
+        SetInitPos(new Vector2(0, 0));
+    }
+
+
+
+    public void SetInitPos(Vector2 position)
+    {
+        transform.position = position;
     }
 
 
