@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AlvaroRuiz.Projects.GameControll.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,6 +21,10 @@ public class Player : MonoBehaviour
     private Vector3 inputDirection;
     private bool currentInput;
     private Vector2 lastInputDirection;
+
+    // SFX
+    [Header("SFX")]
+    [SerializeField] private AudioClip walkClip;
 
     // Only item names
     private List<string> inventory = new List<string>();
@@ -100,6 +105,7 @@ public class Player : MonoBehaviour
         if (currentInput == true)
         {
             animator.SetTrigger("Move");
+            AudioController.PlaySound(walkClip);
 
             Vector3 movement = inputDirection.normalized * speed * Time.deltaTime;
             transform.position += (movement * Time.deltaTime * speed);

@@ -17933,6 +17933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1356224161507722898, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: m_Name
+      value: FogFilter
+      objectReference: {fileID: 0}
     - target: {fileID: 1922151972224007429, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
