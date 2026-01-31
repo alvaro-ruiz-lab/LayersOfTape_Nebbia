@@ -21,6 +21,8 @@ public class CameraTracker : MonoBehaviour
 
     private void Update()
     {
+        if (target == null) return;
+
         t = cameraSpeed * Time.deltaTime;
         Mathf.Clamp01(t);
 

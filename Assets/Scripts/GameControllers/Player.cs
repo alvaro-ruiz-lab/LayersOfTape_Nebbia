@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Animator animator;
+    [SerializeField] private Oxygen oxygen;
 
     // INPUTS SISTEM VARIABLES
     [Header("Input")]
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
     // Propiedades
     public static Player Instance { get; private set; }
     public static PlayerInput PI { get { return Instance.playerInput; } }
-
+    public static Oxygen Oxygen => Instance.oxygen;
 
 
     void Awake()

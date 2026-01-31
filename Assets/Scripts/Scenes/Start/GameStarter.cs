@@ -1,5 +1,5 @@
-using System.Collections;
 using AlvaroRuiz.Projects.GameControll.Audio;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,13 +7,16 @@ public class GameStarter : MonoBehaviour
 {
     void Start()
     {
+        StopAllCoroutines();
         StartCoroutine(LoadGame());
     }
 
     private IEnumerator LoadGame()
     {
         AudioController.PlayInitMusic();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2.5f);
+
+        Debug.Log("Loading Hall Scene...");
 
         SceneManager.LoadScene("Hall");
     }
