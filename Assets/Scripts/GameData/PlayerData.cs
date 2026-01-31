@@ -38,7 +38,6 @@ public static class NPCcData
 {
     public static NPC TestiMone = new NPC(
         "TestiMone",
-        "Le acusan Ino Zente y le exculpa Dio, estaban follando",
         false
     );
 }
