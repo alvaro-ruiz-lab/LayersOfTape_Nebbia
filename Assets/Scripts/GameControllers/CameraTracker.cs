@@ -8,7 +8,17 @@ public class CameraTracker : MonoBehaviour
     private float t;
 
 
-    // Update is called once per frame
+
+    private void Awake()
+    {
+        if (target == null)
+        {
+            FindAnyObjectByType<Player>();
+        }
+    }
+
+
+
     private void Update()
     {
         t = cameraSpeed * Time.deltaTime;
