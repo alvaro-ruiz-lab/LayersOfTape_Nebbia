@@ -48,12 +48,12 @@ public class InventoryItemList : ScriptableObject
 #endif
 }
 
-[System.Serializable]
+[Serializable]
 public class InventoryItem
 {
     public string itemName;
     public string acquittedConclusion;
-    public NPC associatedNPC;
+    public string associatedNPC;
     public bool showOnInventory;
     public Sprite itemSprite;
 }

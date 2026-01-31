@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// NOMBRE: Gio Catore
     /// </summary>
-    /// 
+    ///
 
     // Referencias propias
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
 
 
 
-    // INPUT SYSTEM-------------------------------------------------------------    
+    // INPUT SYSTEM-------------------------------------------------------------
     private void OnMove(InputValue value)
     {
         inputDirection = value.Get<Vector2>();
@@ -117,5 +117,11 @@ public class Player : MonoBehaviour
 
         // Aqui creo que deberiamos chequear triggers de personajes o de objetos
         Debug.Log("Interacted");
+    }
+
+    void TalkToNPC(NPC npc)
+    {
+        var conversationItem = npc.Talk();
+        if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);
     }
 }
