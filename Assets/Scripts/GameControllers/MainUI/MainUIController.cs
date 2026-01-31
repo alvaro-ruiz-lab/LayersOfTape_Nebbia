@@ -11,9 +11,9 @@ public class MainUIController : MonoBehaviour
 
     // Propiedades
     public static MainUIController Instance { get; private set; }
-    public UIInventoryManager UIInventoryManager => Instance.uIInventoryManager;
-    public OxygenBar OxygenBar => Instance.oxygenBar;
-    public ConversationManager ConversationManager => Instance.conversationManager;
+    public static UIInventoryManager UIInventoryManager => Instance.uIInventoryManager;
+    public static OxygenBar OxygenBar => Instance.oxygenBar;
+    public static ConversationManager ConversationManager => Instance.conversationManager;
 
 
 

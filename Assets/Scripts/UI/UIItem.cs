@@ -3,11 +3,9 @@ using UnityEngine.UI;
 
 public class UIItem : MonoBehaviour
 {
-    [SerializeField] private string itemName;
-    public string ItemName => itemName;
-    void Start()
+    public void SetItemData (string name)
     {
-        UniversalGameController.ItemData.TryGetByName(itemName, out var itemData);
+        UniversalGameController.ItemData.TryGetByName(name, out var itemData);
         GetComponent<Image>().sprite = itemData.itemSprite;
     }
 }

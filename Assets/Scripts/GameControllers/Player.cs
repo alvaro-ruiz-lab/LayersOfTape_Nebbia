@@ -10,10 +10,14 @@ public class Player : MonoBehaviour
     // Only item names
     private List<string> inventory = new List<string>();
 
+
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
     }
+
+
 
     // For tangible items
     void PickUpItem(SceneItem item)
@@ -21,11 +25,12 @@ public class Player : MonoBehaviour
         string name = item.ItemName;
         inventory.Add(name);
         item.gameObject.SetActive(false);
+        MainUIController.UIInventoryManager.AddIventoryItem(name);
         // TODO Agregar al Inventario(UI). Crear una instancia del prefab UIItem con el nombre del item.
     }
 
     // For converasion (items). conversationName must match with InventoryItem.itemName
-    void storeConversation(string conversationName)
+    void StoreConversation(string conversationName)
     {
         inventory.Add(conversationName);
     }

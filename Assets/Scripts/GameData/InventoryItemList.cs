@@ -8,6 +8,8 @@ public class InventoryItemList : ScriptableObject
     [SerializeField] private List<InventoryItem> items;
     public IReadOnlyList<InventoryItem> Items => items;
 
+
+
     public bool TryGetByName(string name, out InventoryItem item)
     {
         item = null;
