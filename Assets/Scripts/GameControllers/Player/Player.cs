@@ -14,16 +14,18 @@ public class Player : MonoBehaviour
     // Referencias propias
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private Oxygen oxygen;
     [SerializeField] private Transform triggerRotator;
 
     // INPUTS SISTEM VARIABLES
     [Header("Input")]
-    [SerializeField] private float speed = 5f;
-    private Vector3 inputDirection;
+    [SerializeField] private float movementSpeed;
     private bool currentInput;
+    private Vector2 inputDirection;
     private Vector2 lastInputDirection;
+
     [NonSerialized] public NPC talkableNPC;
     [NonSerialized] public bool isTalking;
 
@@ -64,7 +66,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         // Chequear si se esta moviendo
-        currentInput = inputDirection != Vector3.zero ? true : false;
+        currentInput = inputDirection != Vector2.zero ? true : false;
     }
 
     void FixedUpdate()
@@ -103,26 +105,36 @@ public class Player : MonoBehaviour
     private void OnMove(InputValue value)
     {
         inputDirection = value.Get<Vector2>();
+
     }
 
     void MovePlayer()
     {
         if (currentInput && !isTalking)
         {
+            // Activar animacion de movimiento y sonido
             animator.SetTrigger("Move");
             AudioController.PlaySound(walkClip);
 
+            // Mover personaje
             var direction = inputDirection.normalized;
-            Vector3 movement = direction * speed * Time.deltaTime;
-            transform.position += (movement * Time.deltaTime * speed);
+            Vector3 movement = direction * movementSpeed * Time.deltaTime;
+            transform.position += (movement * Time.deltaTime * movementSpeed);
 
-            bool changeDirection = Math.Sign(lastInputDirection.x) != Math.Sign(inputDirection.x);
-            if (changeDirection)
+            // Cambiar direccion del sprite en horizontal
+            bool changeXDirection = Math.Sign(lastInputDirection.x) != Math.Sign(inputDirection.x);
+
+            int properHorizontalValue = Math.Sign(inputDirection.x) < 0 ? 1 : Math.Sign(inputDirection.x);
+            animator.SetFloat("Horizontal", properHorizontalValue);
+            animator.SetFloat("Vertical", Math.Sign(inputDirection.y));
+
+            if (changeXDirection)
             {
                 spriteRenderer.flipX = inputDirection.x < 0 ? true : inputDirection.x > 0 ? false : spriteRenderer.flipX;
                 lastInputDirection = inputDirection;
             }
 
+            // Rotar trigger de interaccion
             if (inputDirection.sqrMagnitude > 0.0001f)
             {
                 triggerRotator.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg +90f, Vector3.forward);
@@ -131,6 +143,7 @@ public class Player : MonoBehaviour
             return;
         }
 
+        // Detener animacion de movimiento
         animator.SetTrigger("Stop");
     }
 
