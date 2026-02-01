@@ -15959,7 +15959,7 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
-  m_UseDelaunayMesh: 0
+  m_UseDelaunayMesh: 1
 --- !u!1 &400603511
 GameObject:
   m_ObjectHideFlags: 0
@@ -44460,9 +44460,9 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2035747558}
   - {fileID: 1562106572}
   - {fileID: 1596665224}
+  - {fileID: 2035747558}
   - {fileID: 1515106424}
   - {fileID: 3767044}
   - {fileID: 400603513}

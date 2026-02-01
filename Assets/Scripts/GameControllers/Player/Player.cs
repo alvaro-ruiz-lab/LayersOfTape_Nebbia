@@ -1,6 +1,6 @@
+using AlvaroRuiz.Projects.GameControll.Audio;
 using System;
 using System.Collections.Generic;
-using AlvaroRuiz.Projects.GameControll.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     /// </summary>
     ///
 
+    // VARIABLES/CAMPOS-------------------------------------------------------------
     // Referencias propias
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerInput playerInput;
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform triggerRotator;
 
     // INPUTS SISTEM VARIABLES
-    [Header("Input")]
+    [Header("Input and config")]
     [SerializeField] private float movementSpeed;
     private bool currentInput;
     private Vector2 inputDirection;
@@ -42,27 +43,29 @@ public class Player : MonoBehaviour
     public static Oxygen Oxygen => Instance.oxygen;
 
 
+
+    // METODOS DE UNITY-------------------------------------------------------------
+    // METODOS DE INIT DE UNITY
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
             return;
         }
+        Destroy(gameObject);
     }
 
     private void Start()
     {
-        SetInitPos(new Vector2(0, 0));
+        // Init pos en cada escena
+        transform.position = new Vector2(0, 0);
     }
 
 
 
+    // METODOS DE UPDATEO DE UNITY
     void Update()
     {
         // Chequear si se esta moviendo
@@ -76,13 +79,55 @@ public class Player : MonoBehaviour
 
 
 
-    public void SetInitPos(Vector2 position)
+    // HELPERS-------------------------------------------------------------
+    // MOVEMENT
+    void MovePlayer()
     {
-        transform.position = position;
+        if (currentInput && !isTalking)
+        {
+            // Activar animacion de movimiento y sonido
+            animator.SetTrigger("Move");
+            AudioController.PlaySound(walkClip);
+
+            // Mover personaje
+            var direction = inputDirection.normalized;
+            Vector3 movement = direction * movementSpeed * Time.fixedDeltaTime;
+            transform.position += (movement * Time.fixedDeltaTime * movementSpeed);
+
+            // Cambiar direccion del sprite
+            ReorientPlayer();
+
+            // Rotar trigger de interaccion
+            if (inputDirection.sqrMagnitude > 0.0001f)
+            {
+                triggerRotator.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f, Vector3.forward);
+            }
+
+            return;
+        }
+
+        // Detener animacion de movimiento
+        animator.SetTrigger("Stop");
+    }
+
+    private void ReorientPlayer()
+    {
+        bool changeXDirection = Math.Sign(lastInputDirection.x) != Math.Sign(inputDirection.x);
+
+        int properHorizontalValue = Math.Sign(inputDirection.x) < 0 ? 1 : Math.Sign(inputDirection.x);
+        animator.SetFloat("Horizontal", properHorizontalValue);
+        animator.SetFloat("Vertical", Math.Sign(inputDirection.y));
+
+        if (changeXDirection)
+        {
+            spriteRenderer.flipX = inputDirection.x < 0 ? true : inputDirection.x > 0 ? false : spriteRenderer.flipX;
+            lastInputDirection = inputDirection;
+        }
     }
 
 
 
+    // INTERACTIONS
     // For tangible items
     void PickUpItem(SceneItem item)
     {
@@ -99,52 +144,18 @@ public class Player : MonoBehaviour
         inventory.Add(conversationName);
     }
 
+    private void TalkToNPC(NPC npc)
+    {
+        var conversationItem = npc.Talk();
+        if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);
+    }
+
 
 
     // INPUT SYSTEM-------------------------------------------------------------
     private void OnMove(InputValue value)
     {
         inputDirection = value.Get<Vector2>();
-
-    }
-
-    void MovePlayer()
-    {
-        if (currentInput && !isTalking)
-        {
-            // Activar animacion de movimiento y sonido
-            animator.SetTrigger("Move");
-            AudioController.PlaySound(walkClip);
-
-            // Mover personaje
-            var direction = inputDirection.normalized;
-            Vector3 movement = direction * movementSpeed * Time.deltaTime;
-            transform.position += (movement * Time.deltaTime * movementSpeed);
-
-            // Cambiar direccion del sprite en horizontal
-            bool changeXDirection = Math.Sign(lastInputDirection.x) != Math.Sign(inputDirection.x);
-
-            int properHorizontalValue = Math.Sign(inputDirection.x) < 0 ? 1 : Math.Sign(inputDirection.x);
-            animator.SetFloat("Horizontal", properHorizontalValue);
-            animator.SetFloat("Vertical", Math.Sign(inputDirection.y));
-
-            if (changeXDirection)
-            {
-                spriteRenderer.flipX = inputDirection.x < 0 ? true : inputDirection.x > 0 ? false : spriteRenderer.flipX;
-                lastInputDirection = inputDirection;
-            }
-
-            // Rotar trigger de interaccion
-            if (inputDirection.sqrMagnitude > 0.0001f)
-            {
-                triggerRotator.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg +90f, Vector3.forward);
-            }
-
-            return;
-        }
-
-        // Detener animacion de movimiento
-        animator.SetTrigger("Stop");
     }
 
 
@@ -160,11 +171,5 @@ public class Player : MonoBehaviour
         {
             TalkToNPC(talkableNPC);
         }
-    }
-
-    private void TalkToNPC(NPC npc)
-    {
-        var conversationItem = npc.Talk();
-        if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);
     }
 }
