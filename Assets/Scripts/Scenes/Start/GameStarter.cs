@@ -16,7 +16,7 @@ public class GameStarter : MonoBehaviour
         AudioController.PlayInitMusic();
         yield return new WaitForSeconds(2.5f);
 
-        Debug.Log("Loading Hall Scene...");
+        Player.Oxygen.RefillOxygen(100f);
 
         SceneManager.LoadScene("OutDoor");
     }
