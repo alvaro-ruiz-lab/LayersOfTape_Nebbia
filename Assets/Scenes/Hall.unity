@@ -209,6 +209,18 @@ PrefabInstance:
       propertyPath: npcName
       value: Tria Mitto
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3862847029457613909, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 88d3d0dd41c0a3d40b30fdd42506a870, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Tria
@@ -276,9 +288,21 @@ PrefabInstance:
       value: Dio
       objectReference: {fileID: 0}
     - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 510356574, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 93252e3b5bbd51840a1899e331478cb1, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Dio
@@ -15843,6 +15867,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7812176386129065427, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6b424bb8b45be904fbcd903369a78d79, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Testi
@@ -15904,6 +15940,18 @@ PrefabInstance:
       propertyPath: npcName
       value: Speedwagon
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9203715839706898362, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d8d1070a122f1334aa202e8f2479722d, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Speedwagon
@@ -38007,9 +38055,21 @@ PrefabInstance:
       value: Spett Atore
       objectReference: {fileID: 0}
     - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2031559419146626051, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dc564aa8448350445ae75e696bce2132, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Spett
@@ -38077,9 +38137,21 @@ PrefabInstance:
       value: Terza Parte
       objectReference: {fileID: 0}
     - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8269041269346574386, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 54c6e59751a723540a5bf86125876bb7, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Terza
@@ -38211,6 +38283,18 @@ PrefabInstance:
       propertyPath: npcName
       value: Ino Zente
       objectReference: {fileID: 0}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2627358976468047143, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
+    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479939643256381977, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6bea17ddbd350b8478973af53ade1202, type: 2}
     - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Name
       value: NPC Ino
@@ -100279,83 +100363,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ead6f86e4ae03984796590ce23efa0a2, type: 3}
---- !u!1001 &8157073304082520554
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: npcName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275571039880403379, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275571039880403379, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -177770361, guid: e79d9313cc4f4fe4794272215e3f062d, type: 3}
-    - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_MaskInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4813456302241186580, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_Name
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.172
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.010340873
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.05663505
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6979278008952378343, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -100366,7 +100373,6 @@ SceneRoots:
   - {fileID: 1515106424}
   - {fileID: 3767044}
   - {fileID: 400603513}
-  - {fileID: 8157073304082520554}
   - {fileID: 1766913309}
   - {fileID: 489797609}
   - {fileID: 1849572819}
