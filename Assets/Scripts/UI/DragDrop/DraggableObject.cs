@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     // VARIABLES/CAMPOS
     // Referencias propias
+    [SerializeField] private Image objectImg;
     [SerializeField] private TextMeshProUGUI objectText;
     [SerializeField] private GameObject toggleableObject;
 
@@ -34,7 +36,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         // Si se suelta en un slot, este maneja el hacerlo su hijo
-        if (transform.parent == transform.root || !transform.parent.CompareTag("Slot")) // Si se suelta fuera de un slot
+        if (transform.parent == transform.root) // Si se suelta fuera de un slot
         {
             Debug.Log("Dropped outside a slot, returning to shadows.");
             ReturnsToTheShadows(parentAfterDrag);
@@ -50,6 +52,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private void ChangeObjectRaycastState(bool state)
     {
         // Para que no haya conflicto al dropear o volver a ser draggable
+        objectImg.raycastTarget = state;
         objectText.raycastTarget = state;
     }
 
@@ -60,6 +63,8 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         transform.SetParent(slotTarget, false);
         parentAfterDrag = slotTarget;
+
+        toggleableObject.SetActive(!slotTarget.CompareTag("IconOnly"));
     }
 
     public void ReturnsToTheShadows(Transform newParent)
