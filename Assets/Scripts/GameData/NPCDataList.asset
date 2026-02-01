@@ -18,34 +18,211 @@ MonoBehaviour:
     npcIconSprite: {fileID: 1208040086343421634, guid: 07013271d3e914247b1b851aaf3a3735, type: 3}
     conversations:
     - lines:
-      - Hola
-      - "P\xE9gate un tape"
-      itemGiven: testiConvTape
-    - lines:
-      - Hey!
-      - 'Esta noche no duermes c:'
+      - Una fiesta bien animada, como mi vida sentimental.
+      - "\xBFSab\xEDas que he estado con m\xE1s de cincuenta personas?"
+      - "\xBFCu\xE1ndo?"
+      - "La \xFAltima semana, claro."
+      - Lorena, Javier, Lucas, Ana, Roberta, Luigi, Sonia, Sofia, Giula, Chiara,
+        Leonardo,
+      - Tommaso, Lorenzo, Marco, Giulia, Roberta, Leonardo, Aurora, Aurora,
+      - "Aurora, Valentina, Valentino\u2026"
+      - Uy, creo que me estoy liando.
       itemGiven: 
+    - lines:
+      - "Ah, s\xED, contin\xFAo."
+      - "Fernando, Ver\xF3nica, Saul, Nerea, Aurora, Aurora\u2026"
+      - Vaya, otra vez me estoy liando.
+      - "Creo que la l\xEDbido me est\xE1 afectando mucho,"
+      - "necesitar\xEDa una copa para relajarme, pero no s\xE9 si queda mi vino preferido\u2026"
+      - "<b>\xA1CLARO!<b>"
+      - "\xA1Tambi\xE9n es el preferido de Beatrice!"
+      - "No como Francesco, a \xE9l no le gustaba nada."
+      - Pues poco a poco me voy acordando.
+      - "Ah\u2026 <i>(suspiro)<i> Aurora. <i>(mira al techo)<i>"
+      itemGiven: 
+    - lines:
+      - "S\xED, s\xED."
+      - "Si ya casi lo tengo. \xC1gata, Antonino,"
+      - "<b>\xA1D\xC9BORA!<b>"
+      - "C\xF3mo olvidarme de D\xE9bora, menuda cabeza la m\xEDa."
+      - "Ilario, <i>oh mamma m\xEDa<i>."
+      - "Napoleone, \xBFM\xF3nica o Nadia?"
+      - "Dir\xEDa que las dos."
+      - "Pasqualino y su hermana Donatella cayeron bajo mis encantos el mismo d\xEDa."
+      - Esa chica, Ino. La he visto desaparecer de nueve a once.
+      - "Yo tambi\xE9n quiero desaparecer, me hace falta sacarle el polvo a las cortinas
+        pronto"
+      - o no me hago responsable de que mi atrayente
+      - "y seductor rostro bajo esta m\xE1scara,"
+      - "haga que quieras abalanzarse sobre m\xED, lo entender\xEDa."
+      itemGiven: 
+    - lines:
+      - "\xBFC\xF3mo?"
+      - "\xBFQuieres saber toda la lista?"
+      - "Est\xE1 bien, te contar\xE9 la verdad."
+      - Esta semana no han sido cincuenta.
+      - Solo ha sido uno.
+      - Hace un rato.
+      - "Ya sabes, no pod\xEDa decirle que no a ese apuesto vampiro."
+      - Toma, gracias por escucharme.
+      itemGiven: 
+    isItem: 0
   - name: Spett Atore
     loopConversation: 0
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - <i>Pst, pst<i> Yo lo he visto <i>tutto<i>.
+      itemGiven: 
+    - lines:
+      - "Ese Testi Mone har\xEDa lo que fuera por aumentar la lista de gente que
+        ha tenido bajo su c\xF3modo dosel."
+      - "\xBFQue c\xF3mo s\xE9 que es c\xF3modo?"
+      - Detective, no sea vulgar.
+      itemGiven: 
+    - lines:
+      - Ino Zente, una forastera que habla con excusas, cualquiera se cree lo que
+        dice.
+      - "Tiene m\xE1s miedo que una estatua a las palomas."
+      itemGiven: 
+    - lines:
+      - "Qu\xE9 pesada es con su colecci\xF3n de sombreritos."
+      - "No sabe d\xF3nde est\xE1 el suyo y es incapaz de salir fuera a buscarlo."
+      - "Protege su pelo m\xE1s que su cartera."
+      - Terza Parte no quiere mojarse.
+      - Yo creo que es peluca.
+      itemGiven: 
+    - lines:
+      - Otro pesado coleccionista.
+      - "Pir\xE1mides y Tria Mitto son sin\xF3nimos."
+      - No digo nada y lo digo todo.
+      - Si te aburre, te piras y mides la distancia que hay para escapar.
+      itemGiven: 
+    - lines:
+      - Ese chupasangres de Dio lo conoce todo el mundo.
+      - Ha matado a cientos de personas.
+      itemGiven: 
+    - lines:
+      - "Nadie sabe muy bien de d\xF3nde sale la fortuna incre\xEDble de Speedwagon,"
+      - "ni cuales son sus m\xE9todos."
+      - "Ten cuidado, o no saldr\xE1s vivo."
+      itemGiven: 
+    isItem: 0
   - name: Ino Zente
     loopConversation: 0
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - Ho-hola.
+      - S-soy Ino Zente, es un placer co-co-conocerle.
+      itemGiven: 
+    - lines:
+      - Me miran mucho, pero de verdad que no he hecho nada.
+      itemGiven: 
+    - lines:
+      - En serio, t-tiene que creerme.
+      - "Sin embargo, el s-s-se\xF1or Spett Atore calumnia a cualquiera."
+      - Seguro que lo hace para disimular.
+      - Seguro que lo hace para disimular.
+      itemGiven: "SpettDi\xE1logo"
+    isItem: 0
   - name: Terza Parte
     loopConversation: 0
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      itemGiven: 
+    isItem: 0
   - name: Tria Mitto
     loopConversation: 0
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - 
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      itemGiven: 
+    isItem: 0
   - name: Dio
-    loopConversation: 0
+    loopConversation: 1
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - 
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      - 
+      - 
+      - 
+      itemGiven: "Dio-Testi-Di\xE1logo"
+    isItem: 0
   - name: Speedwagon
+    loopConversation: 1
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - 
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      itemGiven: 
+    - lines:
+      - 
+      - 
+      - 
+      - 
+      - 
+      itemGiven: 
+    isItem: 0
+  - name: ITEM_INO
     loopConversation: 0
     npcIconSprite: {fileID: 0}
-    conversations: []
+    conversations:
+    - lines:
+      - 
+      itemGiven: ITEM_INO
+    isItem: 1
+  - name: ITEM_TRIA
+    loopConversation: 0
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - 
+      - 
+      - 
+      itemGiven: ITEM_TRIA
+    isItem: 1

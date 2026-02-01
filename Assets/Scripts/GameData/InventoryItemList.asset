@@ -42,7 +42,7 @@ MonoBehaviour:
     acquittedConclusion: "Ino cree que oculta sus intenciones a trav\xE9s de sus
       acusaciones."
     associatedNPC: Spett Atore
-    good: 1
+    good: 0
     showOnInventory: 0
     itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   - itemName: Terza-Speed-Hat
