@@ -10,4 +10,8 @@ public static class PlayerData
     private static List<InventoryItemList> inventory = new List<InventoryItemList>();
 
     public static List<string> itemsNamesInventory = new List<string>();
+
+    public static string lastScene;
+    public static int layerOnPB = 4;
+    public static int layerOnP1 = 9;
 }
