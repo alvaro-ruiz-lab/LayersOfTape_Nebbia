@@ -15,7 +15,7 @@ MonoBehaviour:
   npcList:
   - name: Testi Mone
     loopConversation: 0
-    npcIconSprite: {fileID: 340430758, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    npcIconSprite: {fileID: -2105823822, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Una fiesta bien animada, como mi vida sentimental.
@@ -70,7 +70,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Spett Atore
     loopConversation: 0
-    npcIconSprite: {fileID: 290574897, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    npcIconSprite: {fileID: -840075579, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - <i>Pst, pst<i> Yo lo he visto <i>tutto<i>.
@@ -112,7 +112,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Ino Zente
     loopConversation: 0
-    npcIconSprite: {fileID: 417831001, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    npcIconSprite: {fileID: -1960687393, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Ho-hola.

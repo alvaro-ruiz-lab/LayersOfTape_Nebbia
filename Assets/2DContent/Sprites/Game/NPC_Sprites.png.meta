@@ -661,6 +661,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: NPC_Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10c64519b391d34b96cf311b5743463
+      internalID: -1935750631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f331286c3d65264dba6b1ede813384d
+      internalID: -500028522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -690,6 +734,8 @@ TextureImporter:
       NPC_Sprites_2: -2031559419146626051
       NPC_Sprites_20: -871046051
       NPC_Sprites_21: -408213025
+      NPC_Sprites_22: -1935750631
+      NPC_Sprites_23: -500028522
       NPC_Sprites_3: 172792029120488763
       NPC_Sprites_4: 2627358976468047143
       NPC_Sprites_5: -7359759138245651079

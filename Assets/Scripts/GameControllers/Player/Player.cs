@@ -191,7 +191,14 @@ public class Player : MonoBehaviour
         //Debug.Log("Interacted");
         if (isTalking)
         {
-            talkableNPC.Talk();
+            if (talkableNPC)
+            {
+                talkableNPC.Talk();
+            }
+            else
+            {
+                isTalking = false;
+            }
         }
         else if (talkableNPC)
         {
@@ -200,6 +207,10 @@ public class Player : MonoBehaviour
         else if (canVeredict)
         {
             StartCoroutine(LoadVeredict());
+        }
+        else if (MainUIController.ConversationManager.IsConversationActive())
+        {
+            MainUIController.ConversationManager.EndConversation();
         }
     }
 

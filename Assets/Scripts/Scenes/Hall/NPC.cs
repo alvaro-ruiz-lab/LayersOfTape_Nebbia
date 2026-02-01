@@ -1,20 +1,27 @@
 using System;
+using AlvaroRuiz.Projects.GameControll.Audio;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class NPC : MonoBehaviour
 {
+    private static readonly int TertiarySprite = Animator.StringToHash("tertiarySprite");
+    private static readonly int SecondaryLaughSprite = Animator.StringToHash("secondaryLaughSprite");
+    private static readonly int ChangeSprite = Animator.StringToHash("changeSprite");
     [SerializeField] private string npcName;
     private int lineIndex;
     private NPCData npcData;
     [SerializeField] private Sprite secondarySprite;
+    [SerializeField] private Sprite tertiarySprite;
     [SerializeField] public int filters = 1;
     [SerializeField] private int stealDifficultyD20 = 11;
     [SerializeField] private bool flirty = true;
-    [SerializeField] private bool coward = false;
+    [SerializeField] private bool coward;
     private int stealBonus;
     private int timesStolen;
+    private bool laughing;
+    [SerializeField] Animator terzaAnimator;
     [NonSerialized] public int currentConversationIndex;
 
 
@@ -67,17 +74,18 @@ public class NPC : MonoBehaviour
 
     private void IncreaseConvIndex()
     {
+        // Speedwagon's last conversation is unlocked by stealing twice.
+        if (npcData.isSpeedwagon && laughing && currentConversationIndex == npcData.conversations.Length - 1)
+        {
+            ChangeToTerciarySprite();
+            currentConversationIndex = -1;
+        }
+
         if (currentConversationIndex < npcData.conversations.Length - 1)
         {
             currentConversationIndex++;
         }
         else if(currentConversationIndex == npcData.conversations.Length - 1)
-        {
-            currentConversationIndex = -1;
-        }
-
-        // Speedwagon's last conversation is unlocked by stealing twice.
-        if (npcData.isSpeedwagon && filters == 2 && currentConversationIndex == npcData.conversations.Length - 1)
         {
             currentConversationIndex = -1;
         }
@@ -117,7 +125,7 @@ public class NPC : MonoBehaviour
         {
             currentConversationIndex = npcData.conversations.Length - 1;
             filters--;
-            ChangeToSecondarySprite();
+            ChangeToSecondaryLaughSprite();
             return 100;
         }
 
@@ -134,8 +142,16 @@ public class NPC : MonoBehaviour
         return 0;
     }
 
-    void ChangeToSecondarySprite()
+    void ChangeToSecondaryLaughSprite()
     {
-        GetComponent<SpriteRenderer>().sprite = secondarySprite;
+        laughing = true;
+        GetComponent<Animator>().SetTrigger(SecondaryLaughSprite);
+    }
+
+    void ChangeToTerciarySprite()
+    {
+        terzaAnimator.SetTrigger(ChangeSprite);
+        GetComponent<Animator>().SetTrigger(TertiarySprite);
+        laughing = false;
     }
 }

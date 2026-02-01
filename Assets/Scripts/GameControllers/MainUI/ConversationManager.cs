@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,11 +12,14 @@ public class ConversationManager : MonoBehaviour
     [SerializeField] private GameObject flirtButton;
     [SerializeField] private GameObject threatenButton;
     [SerializeField] private Image speakerImg;
+    [NonSerialized] public bool waitingNoSkip;
 
 
 
     public void SetConversationText(Sprite speakerFace, string text, bool readyToAction, bool stealOnly = false)
     {
+        if (waitingNoSkip) return;
+
         gameObject.SetActive(true);
 
         bool isAConversation = speakerFace != null; // Si no hay imagen de hablante, es solo texto
@@ -34,6 +38,7 @@ public class ConversationManager : MonoBehaviour
             speakerImg.sprite = speakerFace;
     }
 
+    public bool IsConversationActive() => actionsButtonsPanel.activeSelf;
 
 
     public void EndConversation()
