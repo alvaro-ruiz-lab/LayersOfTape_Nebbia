@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class VeredictController : MonoBehaviour
 {
     [SerializeField] private List<Suspect> suspects = new();
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject losePanel;
 
 
 
     private void Awake()
     {
         Player.Instance.gameObject.SetActive(false);
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
     }
 
 
@@ -48,11 +52,11 @@ public class VeredictController : MonoBehaviour
 
     private void LoadDefeat()
     {
-
+        losePanel.SetActive(true);
     }
 
     private void LoadVictory()
     {
-
+        winPanel.SetActive(true);
     }
 }

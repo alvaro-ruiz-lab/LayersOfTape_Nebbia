@@ -26223,6 +26223,10 @@ PrefabInstance:
       value: Speedwagon
       objectReference: {fileID: 0}
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: laughTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: ed3200b9f113efa4d89f2efdb912763e, type: 3}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: terzaAnimator
       value: 
       objectReference: {fileID: 1386019431}
@@ -79756,15 +79760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.0014556041
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.99908173
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9956332
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9168975368245942345, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: target
