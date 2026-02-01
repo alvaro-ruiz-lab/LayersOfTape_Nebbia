@@ -18,6 +18,6 @@ public class GameStarter : MonoBehaviour
 
         Debug.Log("Loading Hall Scene...");
 
-        SceneManager.LoadScene("Hall");
+        SceneManager.LoadScene("OutDoor");
     }
 }
