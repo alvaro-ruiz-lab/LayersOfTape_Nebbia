@@ -31,6 +31,7 @@ public class ChangeScene : MonoBehaviour
                     return;
             }
 
+            PlayerData.lastScene = targetSceneName;
             SceneManager.LoadScene(targetSceneName);
         }
     }
