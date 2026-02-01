@@ -9,15 +9,15 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         [Header("Audio Sources Music & SFX")]
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource sFXSource;
+        [SerializeField] private AudioSource environmentSource;
 
         // Instancias
         /* Referencias de los clips */
         [Header("Clips de Musica")]
-        [SerializeField] private AudioClip loopMusicClip;
-
-        /* Clips de efectos de sonido */
-        [Header("Clips de SFX")]
-        [SerializeField] private AudioClip templateSFXClip;
+        [SerializeField] private AudioClip mainLoopMusicClip;
+        [SerializeField] private AudioClip a;
+        [SerializeField] private AudioClip b;
+        [SerializeField] private AudioClip c;
 
         // Variables necesarias
         private static AudioClip currentSoundClip;
@@ -26,6 +26,7 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         // Propiedades
         public static AudioController Instance { get; private set; }
         public static AudioSource MusicSource => Instance.musicSource;
+        public static AudioSource EnvironmentSource => Instance.environmentSource;
         public static AudioSource SFXSource => Instance.sFXSource;
 
 
@@ -44,9 +45,40 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
 
 
 
-        public static void PlayInitMusic()
+        public static void PlayMainMusic(string clipRefName)
         {
-            PlayMusic(Instance.loopMusicClip);
+            switch(clipRefName)
+            {
+                case "MainLoop":
+                    PlayMusic(Instance.mainLoopMusicClip);
+                    break;
+
+                default:
+                    Debug.LogWarning("AudioController: No se ha encontrado el clip de musica con el nombre: " + clipRefName);
+                    break;
+            }
+        }
+
+        public static void PlayMainMusic(string clipRefName)
+        {
+            switch(clipRefName)
+            {
+                case "a":
+                    PlayMusic(Instance.mainLoopMusicClip);
+                    break;
+
+                case "b":
+                    PlayMusic(Instance.mainLoopMusicClip);
+                    break;
+
+                case "c":
+                    PlayMusic(Instance.mainLoopMusicClip);
+                    break;
+
+                default:
+                    Debug.LogWarning("AudioController: No se ha encontrado el clip de environment con el nombre: " + clipRefName);
+                    break;
+            }
         }
 
 
@@ -64,12 +96,20 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
 
 
         // Poner MUSICA
-        public static void PlayMusic(AudioClip newMusicClip)
+        private static void PlayMusic(AudioClip newMusicClip)
         {
             //Por si el cambio de escena te lleva a una con el mismo clip
             if (MusicSource.clip == newMusicClip) return;
             MusicSource.clip = newMusicClip;
             MusicSource.Play();
+        }
+
+        // Poner ENVIRONMENT
+        public static void PlayEnvSound(AudioClip newEnvClip)
+        {
+            if (EnvironmentSource.clip == newEnvClip) return;
+            EnvironmentSource.clip = newEnvClip;
+            EnvironmentSource.Play();
         }
 
         // Usar SFX
