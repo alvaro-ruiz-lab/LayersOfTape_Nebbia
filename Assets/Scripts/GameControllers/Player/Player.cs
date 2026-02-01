@@ -202,7 +202,6 @@ public class Player : MonoBehaviour
                 isTalking = false;
             }
             AudioController.PlaySFX(interactClip);
-            talkableNPC.Talk();
         }
         else if (talkableNPC)
         {

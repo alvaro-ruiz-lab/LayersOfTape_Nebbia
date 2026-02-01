@@ -8,7 +8,7 @@ public class NPC : MonoBehaviour
 {
     private static readonly int TertiarySprite = Animator.StringToHash("tertiarySprite");
     private static readonly int SecondaryLaughSprite = Animator.StringToHash("secondaryLaughSprite");
-    private static readonly int ChangeSprite = Animator.StringToHash("changeSprite");
+    private static readonly int ChangeSprite = Animator.StringToHash("ChangeSprite");
     [SerializeField] private string npcName;
     private int lineIndex;
     private NPCData npcData;
@@ -22,6 +22,7 @@ public class NPC : MonoBehaviour
     private int timesStolen;
     private bool laughing;
     [SerializeField] Animator terzaAnimator;
+    [SerializeField] AudioClip laughTrack;
     [NonSerialized] public int currentConversationIndex;
 
 
@@ -147,6 +148,7 @@ public class NPC : MonoBehaviour
     {
         laughing = true;
         GetComponent<Animator>().SetTrigger(SecondaryLaughSprite);
+        AudioController.PlaySFX(laughTrack);
     }
 
     void ChangeToTerciarySprite()

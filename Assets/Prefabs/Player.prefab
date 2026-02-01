@@ -227,8 +227,8 @@ MonoBehaviour:
   triggerRotator: {fileID: 5953300146449247146}
   movementSpeed: 7
   walkClip: {fileID: 8300000, guid: d60c01fcf8d8b664ab445dccf929cd29, type: 3}
-  interact: {fileID: 8300000, guid: e7156c15756d32f40bfb6bd1e46873d8, type: 3}
-  close: {fileID: 8300000, guid: 5ffcf5c82b955d943b0781e58b6e4962, type: 3}
+  interactClip: {fileID: 8300000, guid: e7156c15756d32f40bfb6bd1e46873d8, type: 3}
+  cancelClip: {fileID: 8300000, guid: 5ffcf5c82b955d943b0781e58b6e4962, type: 3}
 --- !u!114 &4399439820579218868
 MonoBehaviour:
   m_ObjectHideFlags: 0
