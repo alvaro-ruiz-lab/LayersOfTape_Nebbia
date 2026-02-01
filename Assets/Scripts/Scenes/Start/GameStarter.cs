@@ -19,7 +19,8 @@ public class GameStarter : MonoBehaviour
 
         yield return new WaitForSeconds(2.5f);
 
-        Player.Oxygen.RefillOxygen(100f);
+        if (Player.Oxygen != null)
+            Player.Oxygen.RefillOxygen(100f);
 
         SceneManager.LoadScene("OutDoor");
     }

@@ -61,7 +61,7 @@ Material:
     - Color_2: {r: 1.1698112, g: 0.6124955, b: 1.024909, a: 1}
     - Speed: {r: 0.05, g: 0.1, b: 0, a: 0}
     - Speed_2: {r: -0.05, g: -0.1, b: 0, a: 0}
-    - _Color: {r: 1.5660378, g: 0.83472764, b: 1.4787172, a: 1}
+    - _Color: {r: 1.3881826, g: 0.83631337, b: 1.5660378, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
