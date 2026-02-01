@@ -150,6 +150,34 @@ public class Player : MonoBehaviour
         PlayerData.itemsNamesInventory.Add(name);
     }
 
+    public void Seduce()
+    {
+        var result = talkableNPC.Seduce();
+        Debug.Log("You seduced the NPC. Outcome: " + result);
+    }
+
+    public void Threaten()
+    {
+        var result = talkableNPC.Threaten();
+        Debug.Log("You threatened the NPC. Outcome: " + result);
+    }
+
+    public void Steal()
+    {
+        var result = talkableNPC.Steal();
+
+        if (result == 100)
+        {
+
+        }
+        // 10% is the worse quality mask filter  possibly provided, but currently we are clamping it between 50 and 90 at the NPC level.
+        else if (result > 9)
+        {
+            oxygen.RefillOxygen(result);
+            Debug.Log("You stole " + result + " oxygen from the NPC!");
+        }
+    }
+
 
 
     // INPUT SYSTEM-------------------------------------------------------------
