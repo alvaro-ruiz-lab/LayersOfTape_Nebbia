@@ -53,20 +53,8 @@ public class NPCData
     public bool loopConversation;
     public Sprite npcIconSprite;
     public Conversation[] conversations;
-    [NonSerialized] public int currentConversationIndex;
     public bool isItem;
-
-    public void IncreaseConvIndex()
-    {
-        if (currentConversationIndex < conversations.Length - 1 || loopConversation)
-        {
-            currentConversationIndex = (currentConversationIndex + 1) % conversations.Length;
-        }
-        else if(currentConversationIndex == conversations.Length - 1)
-        {
-            currentConversationIndex = -1;
-        }
-    }
+    public bool isSpeedwagon;
 
 }
 
