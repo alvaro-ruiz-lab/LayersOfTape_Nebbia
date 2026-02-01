@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using AlvaroRuiz.Projects.GameControll.Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,15 +8,13 @@ public class VeredictController : MonoBehaviour
     [SerializeField] private List<Suspect> suspects = new();
 
 
-    private void Start()
+
+    private void Awake()
     {
         Player.Instance.gameObject.SetActive(false);
     }
 
-    private void OnEsc()
-    {
-        StartCoroutine(LoadHall());
-    }
+
 
     private IEnumerator LoadHall()
     {
@@ -30,8 +26,13 @@ public class VeredictController : MonoBehaviour
         SceneManager.LoadScene("Hall");
     }
 
+    
+
     public void CallVeredict()
     {
+        StartCoroutine(LoadHall());
+        return;
+
         foreach (Suspect suspect in suspects)
         {
             bool found = UniversalGameController.ItemData.TryGetByName(suspect.clue?.clueName, out var itemData);
@@ -42,6 +43,8 @@ public class VeredictController : MonoBehaviour
         }
         LoadVictory();
     }
+
+
 
     private void LoadDefeat()
     {

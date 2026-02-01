@@ -6,10 +6,13 @@ public class Slot : MonoBehaviour, IDropHandler
     // DROP HANDLER---------------------------------------------------
     public void OnDrop(PointerEventData eventData)
     {
+        print("OnDrop en Slot");
         GameObject dropped = eventData.pointerDrag; // Capturar el objeto sobre el que esta el puntero
 
         if (!dropped.TryGetComponent<DraggableObject>(out var newDraggableObject))
+        {
             return; // Si no es draggable, no hacemos nada
+        }
 
         if (IsDragableObjectNOTABalrog())
         {

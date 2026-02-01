@@ -12,12 +12,14 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     // Variables necesarias
     private Transform parentAfterDrag;
     public Transform ParentAfterDrag { get { return parentAfterDrag; } }
+    private Vector3 lastPos;
 
 
 
     // DRAG HANDLERS--------------------------------------------------------------------------------------
     public void OnBeginDrag(PointerEventData eventData)
     {
+        lastPos = transform.position; // Guardar la posicion actual por si se suelta fuera de un slot
         parentAfterDrag = transform.parent; /* Guardar el padre inicial por si se suelta fuera de un slot, volver aqui */
         transform.SetParent(transform.root); /* Llevar objeto al root */
         transform.SetAsLastSibling(); /* Para que se vea por encima de cualquier elemento del Canvas */
@@ -32,8 +34,9 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         // Si se suelta en un slot, este maneja el hacerlo su hijo
-        if (transform.parent == transform.root || transform.parent.CompareTag("Slot")) // Si se suelta fuera de un slot
+        if (transform.parent == transform.root || !transform.parent.CompareTag("Slot")) // Si se suelta fuera de un slot
         {
+            Debug.Log("Dropped outside a slot, returning to shadows.");
             ReturnsToTheShadows(parentAfterDrag);
         }
 
@@ -62,5 +65,6 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void ReturnsToTheShadows(Transform newParent)
     {
         transform.SetParent(newParent);
+        transform.position = lastPos;
     }
 }
