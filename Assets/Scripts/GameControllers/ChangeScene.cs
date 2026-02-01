@@ -5,9 +5,6 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private string targetSceneName;
 
-    private int pbLayer;
-    private int p1Layer;
-
 
 
     private void OnTriggerEnter2D (Collider2D other)
@@ -17,7 +14,7 @@ public class ChangeScene : MonoBehaviour
         {
             if (targetSceneName == "SecretChamber")
             {
-                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= pbLayer;
+                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnPB;
 
                 if (!isOnCorrectLayer)
                     return;
@@ -25,7 +22,7 @@ public class ChangeScene : MonoBehaviour
 
             if (targetSceneName == "ToxicRoom" || targetSceneName == "PrivateRoom")
             {
-                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= p1Layer;
+                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnP1;
 
                 if (!isOnCorrectLayer)
                     return;

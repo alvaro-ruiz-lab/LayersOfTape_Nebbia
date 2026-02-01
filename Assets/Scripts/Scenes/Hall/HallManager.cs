@@ -21,6 +21,10 @@ public class HallManager : MonoBehaviour
             case "SecretChamber":
                 Player.Instance.transform.position = new Vector3(0, 7f, 0);
                 break;
+
+            default:
+                Player.Instance.transform.position = new Vector3(0, -3.5f, 0);
+                break;
         }
     }
 }
