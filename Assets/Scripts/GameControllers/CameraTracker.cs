@@ -2,19 +2,15 @@ using UnityEngine;
 
 public class CameraTracker : MonoBehaviour
 {
-
-    [SerializeField] private Transform target;
     [SerializeField] private float cameraSpeed;
+    private Transform target;
     private float t;
 
 
 
     private void Start()
     {
-        if (target == null)
-        {
-            FindAnyObjectByType<Player>();
-        }
+        target = Player.Instance.transform;
     }
 
 

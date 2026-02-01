@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1417561761373690447}
   m_Layer: 0
   m_Name: TalkTrigger
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5953300146449247146}
   m_Layer: 0
   m_Name: TriggerRotator
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 1790334488385106058}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   animator: {fileID: 1737691569151297231}
   oxygen: {fileID: 4399439820579218868}
   triggerRotator: {fileID: 5953300146449247146}
-  movementSpeed: 6
+  movementSpeed: 7
   walkClip: {fileID: 8300000, guid: d60c01fcf8d8b664ab445dccf929cd29, type: 3}
 --- !u!114 &4399439820579218868
 MonoBehaviour:
@@ -278,7 +278,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.58}
+    oldSize: {x: 0.44444445, y: 0.8055556}
     newSize: {x: 0.32, y: 0.58}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

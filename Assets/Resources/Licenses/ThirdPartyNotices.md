@@ -33,7 +33,30 @@ You are not allowed to:
 - Claim authorship of the assets
 
 Attribution is required in any published or commercial project using these assets.
+
 The underlying source code is licensed under the **Sparks & Pixels Custom Asset License**.  
+The full license text is provided in the `ThirdPartyLicenses` folder.
+
+
+
+### Pixel Art Top Down – Basic
+- **Version:** 1.2.3  
+- **Release date:** January 18, 2026  
+- **Author:** Cainos  
+- **Website:** https://docs.cainos.net/  
+- **Contact:** support@cainos.net  
+
+Distribution and license:  
+- **Store / Platform:** Unity Asset Store  
+- **License / EULA:** Standard Unity Asset Store EULA  
+- **License type (if applicable):** Extension Asset  
+
+Additional notes:  
+This asset pack contains 2D pixel art sprites and tilesets for top-down environments.  
+Use is permitted in personal and commercial Unity projects under the Standard Unity Asset Store EULA.  
+Redistribution or resale outside the Unity Asset Store terms is not permitted.
+
+The underlying source code and art assets are licensed under the **Standard Unity Asset Store EULA**.  
 The full license text is provided in the `ThirdPartyLicenses` folder.
 
 ---
