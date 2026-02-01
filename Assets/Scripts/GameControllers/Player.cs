@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     [SerializeField] private AudioClip walkClip;
 
     // Only item names
-    private List<string> inventory = new List<string>();
+    [NonSerialized] public List<string> inventory = new();
 
     // Propiedades
     public static Player Instance { get; private set; }
