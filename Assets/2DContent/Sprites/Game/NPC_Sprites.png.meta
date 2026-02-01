@@ -1,67 +1,49 @@
 fileFormatVersion: 2
-guid: 53e48a1c7da74a049aafc2c28c0a5411
+guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8045314779052372470
-    second: Walk-Sheet 1_0
+      213: -7812176386129065427
+    second: NPC_Sprites_0
   - first:
-      213: 1500481068207353733
-    second: Walk-Sheet 1_1
+      213: 1725471732808115362
+    second: NPC_Sprites_1
   - first:
-      213: -1678314105727289368
-    second: Walk-Sheet 1_2
+      213: -2031559419146626051
+    second: NPC_Sprites_2
   - first:
-      213: 451018900123181804
-    second: Walk-Sheet 1_3
+      213: 172792029120488763
+    second: NPC_Sprites_3
   - first:
-      213: 1607225210159887768
-    second: Walk-Sheet 1_4
+      213: 2627358976468047143
+    second: NPC_Sprites_4
   - first:
-      213: 4991313382458336602
-    second: Walk-Sheet 1_5
+      213: -7359759138245651079
+    second: NPC_Sprites_5
   - first:
-      213: -4162613055282204287
-    second: Walk-Sheet 1_6
+      213: 8269041269346574386
+    second: NPC_Sprites_6
   - first:
-      213: 4735496376242990756
-    second: Walk-Sheet 1_7
+      213: 3422867068481553036
+    second: NPC_Sprites_7
   - first:
-      213: -4458402333393386839
-    second: Walk-Sheet 1_8
+      213: -3862847029457613909
+    second: NPC_Sprites_8
   - first:
-      213: -6231939044719919981
-    second: Walk-Sheet 1_9
+      213: 7089665572029248770
+    second: NPC_Sprites_9
   - first:
-      213: 1757424282725583703
-    second: Walk-Sheet 1_10
+      213: 6108391240406939175
+    second: NPC_Sprites_10
   - first:
-      213: 3433356686434321436
-    second: Walk-Sheet 1_11
+      213: -8459818158605577284
+    second: NPC_Sprites_11
   - first:
-      213: -8199001124872935481
-    second: Walk-Sheet 1_12
+      213: 9203715839706898362
+    second: NPC_Sprites_12
   - first:
-      213: -9034654720030490045
-    second: Walk-Sheet 1_13
-  - first:
-      213: 5861503558484127270
-    second: Walk-Sheet 1_14
-  - first:
-      213: -498403663366748995
-    second: Walk-Sheet 1_15
-  - first:
-      213: 1415781669885660976
-    second: Walk-Sheet 1_16
-  - first:
-      213: -5995534187895825762
-    second: Walk-Sheet 1_17
-  - first:
-      213: 6784605418733400880
-    second: Walk-Sheet 1_18
-  - first:
-      213: 8530145362259366966
-    second: Walk-Sheet 1_19
+      213: -9170894837898081613
+    second: NPC_Sprites_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 72
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,17 +135,56 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk-Sheet 1_0
+      name: NPC_Sprites_0
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 32
-        height: 58
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f1fd976a23b6af60800000000000000
-      internalID: 8045314779052372470
+      spriteID: d2a051ea7f2959390800000000000000
+      internalID: -7812176386129065427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_1
+      name: NPC_Sprites_1
       rect:
         serializedVersion: 2
         x: 32
         y: 256
         width: 32
-        height: 57
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58fa2b6e497c2d410800000000000000
-      internalID: 1500481068207353733
+      spriteID: 2a46108266b12f710800000000000000
+      internalID: 1725471732808115362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_2
+      name: NPC_Sprites_2
       rect:
         serializedVersion: 2
         x: 64
         y: 256
         width: 32
-        height: 55
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e7f892863e65b8e0800000000000000
-      internalID: -1678314105727289368
+      spriteID: dfb9aa1d8737ec3e0800000000000000
+      internalID: -2031559419146626051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_3
+      name: NPC_Sprites_3
       rect:
         serializedVersion: 2
         x: 96
         y: 256
         width: 32
-        height: 57
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce264d0dc47524600800000000000000
-      internalID: 451018900123181804
+      spriteID: b35eebb5f61e56200800000000000000
+      internalID: 172792029120488763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_4
+      name: NPC_Sprites_4
       rect:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 31
-        height: 55
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 895f1ad20d20e4610800000000000000
-      internalID: 1607225210159887768
+      spriteID: 725dfc99111467420800000000000000
+      internalID: 2627358976468047143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_5
+      name: NPC_Sprites_5
       rect:
         serializedVersion: 2
         x: 32
-        y: 191
+        y: 192
         width: 32
-        height: 56
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5525148315b44540800000000000000
-      internalID: 4991313382458336602
+      spriteID: 975de64be02ecd990800000000000000
+      internalID: -7359759138245651079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_6
+      name: NPC_Sprites_6
       rect:
         serializedVersion: 2
         x: 64
         y: 192
-        width: 31
-        height: 53
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,20 +325,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 181308e0b7d6b36c0800000000000000
-      internalID: -4162613055282204287
+      spriteID: 230a274293981c270800000000000000
+      internalID: 8269041269346574386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_7
+      name: NPC_Sprites_7
       rect:
         serializedVersion: 2
         x: 96
-        y: 191
+        y: 192
         width: 32
-        height: 58
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4aeec1d4ddcd7b140800000000000000
-      internalID: 4735496376242990756
+      spriteID: c82c932b677708f20800000000000000
+      internalID: 3422867068481553036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_8
+      name: NPC_Sprites_8
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 31
-        height: 58
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,20 +369,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a2805c03b29022c0800000000000000
-      internalID: -4458402333393386839
+      spriteID: bab818bc719646ac0800000000000000
+      internalID: -3862847029457613909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_9
+      name: NPC_Sprites_9
       rect:
         serializedVersion: 2
         x: 32
         y: 128
-        width: 31
-        height: 57
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,20 +391,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39cf4910574b389a0800000000000000
-      internalID: -6231939044719919981
+      spriteID: 205be1d664d836260800000000000000
+      internalID: 7089665572029248770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_10
+      name: NPC_Sprites_10
       rect:
         serializedVersion: 2
         x: 64
         y: 128
-        width: 31
-        height: 56
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,20 +413,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75b018be210a36810800000000000000
-      internalID: 1757424282725583703
+      spriteID: 7263091387d55c450800000000000000
+      internalID: 6108391240406939175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_11
+      name: NPC_Sprites_11
       rect:
         serializedVersion: 2
         x: 96
         y: 128
         width: 32
-        height: 59
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,20 +435,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c14412237bbb5af20800000000000000
-      internalID: 3433356686434321436
+      spriteID: cb35aefe430b89a80800000000000000
+      internalID: -8459818158605577284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_12
+      name: NPC_Sprites_12
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 30
-        height: 57
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,20 +457,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c7abe6caeb473e80800000000000000
-      internalID: -8199001124872935481
+      spriteID: abf9d57faca2abf70800000000000000
+      internalID: 9203715839706898362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_13
+      name: NPC_Sprites_13
       rect:
         serializedVersion: 2
         x: 32
         y: 64
-        width: 30
-        height: 56
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,140 +479,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 342c64856657e9280800000000000000
-      internalID: -9034654720030490045
+      spriteID: 3ba0f920cbf6ab080800000000000000
+      internalID: -9170894837898081613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_14
+      name: NPC_Sprites_14
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 30
-        height: 55
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62e622d4e6e385150800000000000000
-      internalID: 5861503558484127270
+      spriteID: 285880c3713bc1f49985d638e29e646a
+      internalID: 510356574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_15
+      name: NPC_Sprites_15
       rect:
         serializedVersion: 2
         x: 96
         y: 64
         width: 32
-        height: 58
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db4854242805519f0800000000000000
-      internalID: -498403663366748995
+      spriteID: 97ea555692602744a98b7f77d04a1eb7
+      internalID: 594214851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_16
+      name: NPC_Sprites_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 58
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03f4b097dedd5a310800000000000000
-      internalID: 1415781669885660976
+      spriteID: 9bc53c04d9482df4a8ea5bbdbe814d98
+      internalID: -1357680511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_17
+      name: NPC_Sprites_17
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 57
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e9a52cbfb659bcca0800000000000000
-      internalID: -5995534187895825762
+      spriteID: 7c12d4807ed1f2a43872d5f19be39e9e
+      internalID: 856215226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_18
+      name: NPC_Sprites_18
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 56
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0337bc49ea2c72e50800000000000000
-      internalID: 6784605418733400880
+      spriteID: bbcc90203691f23488723771ab60a48e
+      internalID: -190229586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk-Sheet 1_19
+      name: NPC_Sprites_19
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 59
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6345ae7230a216670800000000000000
-      internalID: 8530145362259366966
+      spriteID: 3e6dd44fb14a4534d9ab2a3b649f1b78
+      internalID: -2130679301
       vertices: []
       indices: 
       edges: []
@@ -600,7 +621,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 62100162da0073e488a89dae4e2562fe
     internalID: 0
     vertices: []
     indices: 
@@ -610,26 +631,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Walk-Sheet 1_0: 8045314779052372470
-      Walk-Sheet 1_1: 1500481068207353733
-      Walk-Sheet 1_10: 1757424282725583703
-      Walk-Sheet 1_11: 3433356686434321436
-      Walk-Sheet 1_12: -8199001124872935481
-      Walk-Sheet 1_13: -9034654720030490045
-      Walk-Sheet 1_14: 5861503558484127270
-      Walk-Sheet 1_15: -498403663366748995
-      Walk-Sheet 1_16: 1415781669885660976
-      Walk-Sheet 1_17: -5995534187895825762
-      Walk-Sheet 1_18: 6784605418733400880
-      Walk-Sheet 1_19: 8530145362259366966
-      Walk-Sheet 1_2: -1678314105727289368
-      Walk-Sheet 1_3: 451018900123181804
-      Walk-Sheet 1_4: 1607225210159887768
-      Walk-Sheet 1_5: 4991313382458336602
-      Walk-Sheet 1_6: -4162613055282204287
-      Walk-Sheet 1_7: 4735496376242990756
-      Walk-Sheet 1_8: -4458402333393386839
-      Walk-Sheet 1_9: -6231939044719919981
+      NPC_Sprites_0: -7812176386129065427
+      NPC_Sprites_1: 1725471732808115362
+      NPC_Sprites_10: 6108391240406939175
+      NPC_Sprites_11: -8459818158605577284
+      NPC_Sprites_12: 9203715839706898362
+      NPC_Sprites_13: -9170894837898081613
+      NPC_Sprites_14: 510356574
+      NPC_Sprites_15: 594214851
+      NPC_Sprites_16: -1357680511
+      NPC_Sprites_17: 856215226
+      NPC_Sprites_18: -190229586
+      NPC_Sprites_19: -2130679301
+      NPC_Sprites_2: -2031559419146626051
+      NPC_Sprites_3: 172792029120488763
+      NPC_Sprites_4: 2627358976468047143
+      NPC_Sprites_5: -7359759138245651079
+      NPC_Sprites_6: 8269041269346574386
+      NPC_Sprites_7: 3422867068481553036
+      NPC_Sprites_8: -3862847029457613909
+      NPC_Sprites_9: 7089665572029248770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

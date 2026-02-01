@@ -9,4 +9,5 @@ public static class PlayerData
     private static string playerName = "Gio Catore";
     private static List<InventoryItemList> inventory = new List<InventoryItemList>();
 
+    public static List<string> itemsNamesInventory = new List<string>();
 }

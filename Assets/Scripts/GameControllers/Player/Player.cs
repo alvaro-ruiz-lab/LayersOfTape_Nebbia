@@ -37,9 +37,6 @@ public class Player : MonoBehaviour
     [Header("SFX")]
     [SerializeField] private AudioClip walkClip;
 
-    // Only item names
-    [NonSerialized] public List<string> inventory = new();
-
     // Propiedades
     public static Player Instance { get; private set; }
     public static PlayerInput PI { get { return Instance.playerInput; } }
@@ -135,22 +132,22 @@ public class Player : MonoBehaviour
     void PickUpItem(SceneItem item)
     {
         string name = item.ItemName;
-        inventory.Add(name);
+        StoreConversation(name);
         item.gameObject.SetActive(false);
         MainUIController.UIInventoryManager.AddIventoryItem(name);
         // TODO Agregar al Inventario(UI). Crear una instancia del prefab UIItem con el nombre del item.
-    }
-
-    // For converasion (items). conversationName must match with InventoryItem.itemName
-    void StoreConversation(string conversationName)
-    {
-        inventory.Add(conversationName);
     }
 
     private void TalkToNPC(NPC npc)
     {
         var conversationItem = npc.Talk();
         if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);
+    }
+
+    // For converasion (items). conversationName must match with InventoryItem.itemName
+    void StoreConversation(string name)
+    {
+        PlayerData.itemsNamesInventory.Add(name);
     }
 
 
@@ -165,7 +162,7 @@ public class Player : MonoBehaviour
 
     private void OnInteract()
     {
-        Debug.Log("Interacted");
+        //Debug.Log("Interacted");
         if (isTalking)
         {
             talkableNPC.Talk();
