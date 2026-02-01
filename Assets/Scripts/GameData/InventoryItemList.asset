@@ -13,13 +13,41 @@ MonoBehaviour:
   m_Name: InventoryItemList
   m_EditorClassIdentifier: 
   items:
-  - itemName: Cuchillo
-    acquittedConclusion: Lorem Ipsum Dolor
-    associatedNPC: 
+  - itemName: InoPastillas
+    acquittedConclusion: Tuvo un reposo de tres horas por las pastillas durante el
+      asesinato.
+    associatedNPC: Ino Zente
+    good: 1
     showOnInventory: 1
     itemSprite: {fileID: 1208040086343421634, guid: 07013271d3e914247b1b851aaf3a3735, type: 3}
-  - itemName: testiConvTape
-    acquittedConclusion: "P\xE9gate un tape"
-    associatedNPC: Testi Mone
+  - itemName: TriaCarta
+    acquittedConclusion: "Est\xE1 lesionado, no puede levantar peso."
+    associatedNPC: Tria Mitto
+    good: 1
+    showOnInventory: 1
+    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - itemName: InoCarta
+    acquittedConclusion: Una carta que revela su amor pasional por Litto.
+    associatedNPC: Ino Zente
+    good: 0
+    showOnInventory: 1
+    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - itemName: "Dio-Testi-Di\xE1logo"
+    acquittedConclusion: "Dio se acost\xF3 durante tres horas con Testi."
+    associatedNPC: Dio
+    good: 1
     showOnInventory: 0
+    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - itemName: "SpettDi\xE1logo"
+    acquittedConclusion: "Ino cree que oculta sus intenciones a trav\xE9s de sus
+      acusaciones."
+    associatedNPC: Spett Atore
+    good: 1
+    showOnInventory: 0
+    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - itemName: Terza-Speed-Hat
+    acquittedConclusion: "No saldr\xEDa fuera sin su sombrero. Lo ten\xEDa Speedwagon."
+    associatedNPC: Terza Parte
+    good: 1
+    showOnInventory: 1
     itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}

@@ -19,6 +19,10 @@ public class PlayerConversationTrigger : MonoBehaviour
         {
             playerScript.talkableNPC = npc;
         }
+        else if (other.gameObject.CompareTag("Finish"))
+        {
+            playerScript.canVeredict = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -27,6 +31,10 @@ public class PlayerConversationTrigger : MonoBehaviour
         if (other.TryGetComponent(out NPC npc) && npc == playerScript.talkableNPC)
         {
             playerScript.talkableNPC = null;
+        }
+        else if (other.gameObject.CompareTag("Finish"))
+        {
+            playerScript.canVeredict = false;
         }
     }
 }

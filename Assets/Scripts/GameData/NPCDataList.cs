@@ -54,6 +54,7 @@ public class NPCData
     public Sprite npcIconSprite;
     public Conversation[] conversations;
     [NonSerialized] public int currentConversationIndex;
+    public bool isItem;
 
     public void IncreaseConvIndex()
     {

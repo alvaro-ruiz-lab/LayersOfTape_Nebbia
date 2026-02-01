@@ -1,8 +1,10 @@
 using AlvaroRuiz.Projects.GameControll.Audio;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
 
     [NonSerialized] public NPC talkableNPC;
     [NonSerialized] public bool isTalking;
+    [NonSerialized] public bool canVeredict;
 
     // SFX
     [Header("SFX")]
@@ -171,5 +174,19 @@ public class Player : MonoBehaviour
         {
             TalkToNPC(talkableNPC);
         }
+        else if (canVeredict)
+        {
+            StartCoroutine(LoadVeredict());
+        }
+    }
+
+    private IEnumerator LoadVeredict()
+    {
+        AudioController.PlayInitMusic();
+        yield return new WaitForSeconds(2.5f);
+
+        Debug.Log("Loading Veredict Scene...");
+
+        SceneManager.LoadScene("EndGameVeredict");
     }
 }

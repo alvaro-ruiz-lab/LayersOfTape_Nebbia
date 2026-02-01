@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7643036543970416925}
   - component: {fileID: 43280668473557544}
   - component: {fileID: 25987661634688452}
-  m_Layer: 5
+  - component: {fileID: 3654912214917000294}
+  m_Layer: 3
   m_Name: SuspectLinkedClue
-  m_TagString: Untagged
+  m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +76,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3654912214917000294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581251242997435406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8eaa0d88fceda46b94f61c81605511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113681782725682226
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,9 +97,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3546351553947435307}
+  - component: {fileID: 677719380928903467}
   m_Layer: 5
   m_Name: SuspectContainer
-  m_TagString: Untagged
+  m_TagString: IconOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +126,20 @@ RectTransform:
   m_AnchoredPosition: {x: 167, y: -77.14282}
   m_SizeDelta: {x: 250, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &677719380928903467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113681782725682226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b827a99ad2648a40892814aa5463a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspectName: Testi Mone
+  suspectImage: {fileID: 3646242881523283252}
 --- !u!1 &6494327801121306232
 GameObject:
   m_ObjectHideFlags: 0

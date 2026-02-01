@@ -54,6 +54,7 @@ public class InventoryItem
     public string itemName;
     public string acquittedConclusion;
     public string associatedNPC;
+    public bool good = true;
     public bool showOnInventory;
     public Sprite itemSprite;
 }

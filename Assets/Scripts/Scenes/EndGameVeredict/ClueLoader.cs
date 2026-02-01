@@ -5,13 +5,15 @@ public class ClueLoader : MonoBehaviour
 {
     private List<string> inventory;
     [SerializeField] private GameObject CluePrefab;
+    [SerializeField] private GameObject SlotPrefab;
+    [SerializeField] private List<Slot> slotList;
+    private int slotCount;
 
 
 
-    void Start()
+    void Awake()
     {
         inventory = Player.Instance.inventory;
-        Player.Instance.gameObject.SetActive(false);
         LoadInventory();
     }
 
@@ -20,7 +22,8 @@ public class ClueLoader : MonoBehaviour
         foreach (string clue in inventory)
         {
             UniversalGameController.ItemData.TryGetByName(clue, out var itemData);
-            GameObject newItem = Instantiate(CluePrefab, transform);
+            GameObject newSlot = Instantiate(SlotPrefab, transform);
+            GameObject newItem = Instantiate(CluePrefab, newSlot.transform);
             var newClue = newItem.GetComponent<Clue>();
             newClue.clueImage.sprite = itemData.itemSprite;
             newClue.clueText.text = itemData.acquittedConclusion;

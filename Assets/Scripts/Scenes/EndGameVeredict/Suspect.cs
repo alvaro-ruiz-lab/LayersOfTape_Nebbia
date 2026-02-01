@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Suspect : MonoBehaviour
 {
-    [SerializeField] string suspectName;
+    [SerializeField] public string suspectName;
     [SerializeField] Image suspectImage;
     [NonSerialized] public Clue clue;
 
@@ -23,6 +23,6 @@ public class Suspect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

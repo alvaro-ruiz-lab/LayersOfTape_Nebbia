@@ -7,6 +7,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     // VARIABLES/CAMPOS
     // Referencias propias
     [SerializeField] private TextMeshProUGUI objectText;
+    [SerializeField] private GameObject toggleableObject;
 
     // Variables necesarias
     private Transform parentAfterDrag;

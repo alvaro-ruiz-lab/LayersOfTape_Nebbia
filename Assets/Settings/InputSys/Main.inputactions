@@ -115,6 +115,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Veredict",
+            "id": "37ab2bd4-87e0-4a5d-8e71-527cfaa4fc9e",
+            "actions": [
+                {
+                    "name": "Esc",
+                    "type": "Button",
+                    "id": "710a50da-e985-4d31-8cea-7cd17befad00",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d86738e6-b062-4f6f-8572-c620b88089e0",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Esc",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1436dccd-1f98-41e9-b1c4-54dfa09e0c21",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Esc",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
