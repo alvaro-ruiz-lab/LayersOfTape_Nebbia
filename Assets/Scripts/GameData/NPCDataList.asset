@@ -123,7 +123,7 @@ MonoBehaviour:
       - En serio, t-tiene que creerme.
       - "Sin embargo, el s-s-se\xF1or Spett Atore calumnia a cualquiera."
       - Seguro que lo hace para disimular.
-      - Seguro que lo hace para disimular.
+      - "Por favor, t-t-t\xF3melo. Ha sido muy am-m-m-mable conmigo. <i>(solloza)<i>"
       itemGiven: "SpettDi\xE1logo"
     isItem: 0
   - name: Terza Parte
@@ -131,17 +131,17 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
-      - 
+      - Buenas noches, joven detective.
+      - "Bonito sombrero, por cierto. Ojal\xE1 tuviera el m\xEDo..."
       itemGiven: 
     - lines:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      - "Maldito Speedwagon, s\xE9 que oculta algo, pero no tengo c\xF3mo demostrarlo."
+      - "Ojal\xE1 alguien pudiera sonsacarle lo que esconde."
+      - "Adem\xE1s, Spetta me lo ha contado todo."
+      - Cuando digo todo, es <b>TODO<b>.
+      - Ha estado de nueve a once sin parar de contar trapos sucios de los presentes.
+      - "Ay\xFAdeme a encontrar mi sombrero, seguro que Speedwagon sabe algo."
+      - "Esto le ser\xE1 \xFAtil."
       itemGiven: 
     isItem: 0
   - name: Tria Mitto
@@ -149,18 +149,25 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
-      - 
-      - 
+      - Un placer, soy Tria Mitto.
+      - "El gran recolector de pir\xE1mides."
+      - "Incre\xEDble conocedor de los poliedros."
       itemGiven: 
     - lines:
-      - 
-      - 
-      - 
-      - 
+      - "\xBFSab\xEDas que las Pir\xE1mides de Giza no son tres, sino nueve?"
+      - "La Pir\xE1mide de Keops, la \xFAnica Maravilla del Mundo Antiguo que a\xFAn
+        sigue en pie. \xA1Y ojo!\nLas Pir\xE1mides de Giza est\xE1n perfectamente
+        alineadas, y eso que no fueron construidas por esclavos. La Gran Pir\xE1mide
+        mide menos ahora que cuando se construy\xF3, \xBFno es fascinante?"
+      - "La Pir\xE1mide de Keops es un puzzle de millones de piezas de una dificultad
+        enorme. Antiguamente las pir\xE1mides \u201Ceran de oro\u201D.\nSi no tienes
+        hora, no te preocupes, la Pir\xE1mide de Keops sirve como reloj."
+      - "El emplazamiento de las pir\xE1mides al oeste del Nilo no es casualidad.
+        La construcci\xF3n de las pir\xE1mides sigue siendo un gran misterio, \xA1pero
+        lo pienso averiguar todo!"
       itemGiven: 
     - lines:
-      - 
+      - "\xA1Pi, pi, Pir\xE1mideeeeeee \u266B!"
       itemGiven: 
     isItem: 0
   - name: Dio
@@ -168,19 +175,19 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
-      - 
-      - 
+      - Pensabas que era una pista,
+      - pero era yo,
+      - "<b>\xA1DIO!<b>"
       itemGiven: 
     - lines:
-      - 
+      - "Spedwagon... Wryyy... \xA1Siempre entrometido en todo!"
       itemGiven: 
     - lines:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - "\xBFTesti?"
+      - "<i>Wry...<i> Rechazo mi miedo por el placer con gente como \xE9l."
+      - De nueve a once hemos tenido un encuentro suculento.
+      - "Para que no me molestes m\xE1s."
+      - "Ahora, m\xE1rchate."
       itemGiven: "Dio-Testi-Di\xE1logo"
     isItem: 0
   - name: Speedwagon
@@ -188,24 +195,26 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
-      - 
-      - 
+      - "\xBFQui\xE9n soy yo? Se preguntar\xE1."
+      - "Perm\xEDtame presentarme."
+      - <b>Soy Robert E. O. Speedwagon.<b>
       itemGiven: 
     - lines:
-      - 
-      - 
+      - Esa Terza, es capaz de sobornar a alguien con tal de hacerse con el sombrero
+        de copa de Litto.
+      - "Est\xE1 obsesionada con los sombreros."
       itemGiven: 
     - lines:
-      - 
-      - 
+      - "\xBFOcurre algo?"
+      - "\xBFPuedo ayudarle?"
       itemGiven: 
     - lines:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - No es lo que parece.
+      - He estado aguantando desde las ocho de la tarde hasta ahora con el sombrero.
+      - "Quer\xEDa ver cu\xE1ndo se daba cuenta Terza de que yo lo ten\xEDa. No es
+        muy avispada."
+      - "\xA1Una peque\xF1a broma no le hace da\xF1o a nadie!"
+      - Por las molestias.
       itemGiven: 
     isItem: 0
   - name: ITEM_INO
@@ -213,7 +222,9 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
+      - "<i><b>Antidepresivos<b>. Hay una etiqueta: Ino Zente. En la prescripci\xF3n
+        dice que hay que reposar durante tres horas. Cobra sentido sentido que est\xE9
+        tan inquieta.<i>"
       itemGiven: ITEM_INO
     isItem: 1
   - name: ITEM_TRIA
@@ -221,8 +232,9 @@ MonoBehaviour:
     npcIconSprite: {fileID: 0}
     conversations:
     - lines:
-      - 
-      - 
-      - 
+      - <i>Una carta dirigida a la mujer de Litto.<i>
+      - "<i>Le regalaba pir\xE1mides por sus viajes a Egipto.<i>"
+      - "<i>Por lo visto, Tria tiene una lesi\xF3n que <b>le impide levantar peso<b>
+        desde hace unos d\xEDas.<i>"
       itemGiven: ITEM_TRIA
     isItem: 1
