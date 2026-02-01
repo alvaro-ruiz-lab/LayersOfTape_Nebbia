@@ -15,7 +15,7 @@ MonoBehaviour:
   npcList:
   - name: Testi Mone
     loopConversation: 0
-    npcIconSprite: {fileID: 1208040086343421634, guid: 07013271d3e914247b1b851aaf3a3735, type: 3}
+    npcIconSprite: {fileID: 340430758, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Una fiesta bien animada, como mi vida sentimental.
@@ -70,7 +70,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Spett Atore
     loopConversation: 0
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: 290574897, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - <i>Pst, pst<i> Yo lo he visto <i>tutto<i>.
@@ -112,7 +112,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Ino Zente
     loopConversation: 0
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: 417831001, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Ho-hola.
@@ -131,7 +131,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Terza Parte
     loopConversation: 0
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: -2208447157699951675, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Buenas noches, joven detective.
@@ -150,7 +150,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Tria Mitto
     loopConversation: 0
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: 4217578736160866412, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Un placer, soy Tria Mitto.
@@ -177,7 +177,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Dio
     loopConversation: 1
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: -3238489975912758830, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - Pensabas que era una pista,
@@ -198,7 +198,7 @@ MonoBehaviour:
     isSpeedwagon: 0
   - name: Speedwagon
     loopConversation: 1
-    npcIconSprite: {fileID: 0}
+    npcIconSprite: {fileID: -6651149882663238023, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
     conversations:
     - lines:
       - "\xBFQui\xE9n soy yo? Se preguntar\xE1."

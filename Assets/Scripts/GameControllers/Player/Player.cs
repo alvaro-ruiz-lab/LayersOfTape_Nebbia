@@ -152,14 +152,12 @@ public class Player : MonoBehaviour
 
     public void Seduce()
     {
-        var result = talkableNPC.Seduce();
-        Debug.Log("You seduced the NPC. Outcome: " + result);
+        talkableNPC.Seduce();
     }
 
     public void Threaten()
     {
-        var result = talkableNPC.Threaten();
-        Debug.Log("You threatened the NPC. Outcome: " + result);
+        talkableNPC.Threaten();
     }
 
     public void Steal()
@@ -168,7 +166,7 @@ public class Player : MonoBehaviour
 
         if (result == 100)
         {
-
+            TalkToNPC(talkableNPC);
         }
         // 10% is the worse quality mask filter  possibly provided, but currently we are clamping it between 50 and 90 at the NPC level.
         else if (result > 9)

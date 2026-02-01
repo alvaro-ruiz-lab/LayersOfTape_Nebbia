@@ -206,6 +206,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: coward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: flirty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: npcName
       value: Tria Mitto
       objectReference: {fileID: 0}
@@ -15911,6 +15919,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: coward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: flirty
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -15988,6 +16004,10 @@ PrefabInstance:
       propertyPath: npcName
       value: Speedwagon
       objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: secondarySprite
+      value: 
+      objectReference: {fileID: -9170894837898081613, guid: 9f87ab3faa7b21c41b1b7fb6d5728ee3, type: 3}
     - target: {fileID: 3750909368874706564, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -38099,6 +38119,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: flirty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: npcName
       value: Spett Atore
       objectReference: {fileID: 0}
@@ -38338,6 +38362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: coward
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: npcName
       value: Ino Zente

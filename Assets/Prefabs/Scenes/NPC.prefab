@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 1941430758539350241, guid: afdb77f7b5c0d824fa5d433564be9cf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.44444445, y: 0.8888889}
@@ -171,3 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: Testi Mone
+  secondarySprite: {fileID: 0}
+  filters: 1
+  stealDifficultyD20: 11
+  flirty: 1

@@ -8,11 +8,13 @@ public class ConversationManager : MonoBehaviour
     [SerializeField] private Image conversationBg;
     [SerializeField] private TextMeshProUGUI conversationText;
     [SerializeField] private GameObject actionsButtonsPanel;
+    [SerializeField] private GameObject flirtButton;
+    [SerializeField] private GameObject threatenButton;
     [SerializeField] private Image speakerImg;
 
 
 
-    public void SetConversationText(Sprite speakerFace, string text, bool readyToAction)
+    public void SetConversationText(Sprite speakerFace, string text, bool readyToAction, bool stealOnly = false)
     {
         gameObject.SetActive(true);
 
@@ -24,6 +26,8 @@ public class ConversationManager : MonoBehaviour
         conversationText.text = text;
 
         actionsButtonsPanel.SetActive(readyToAction);
+        flirtButton.SetActive(!stealOnly);
+        threatenButton.SetActive(!stealOnly);
 
         speakerImg.gameObject.SetActive(isAConversation);
         if (isAConversation && speakerImg.sprite != speakerFace)

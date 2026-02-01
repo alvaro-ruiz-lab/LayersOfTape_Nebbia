@@ -12,6 +12,7 @@ public class NPC : MonoBehaviour
     [SerializeField] public int filters = 1;
     [SerializeField] private int stealDifficultyD20 = 11;
     [SerializeField] private bool flirty = true;
+    [SerializeField] private bool coward = false;
     private int stealBonus;
     private int timesStolen;
     [NonSerialized] public int currentConversationIndex;
@@ -40,8 +41,14 @@ public class NPC : MonoBehaviour
             }
             Conversation conv = npcData.conversations[convIndex];
             bool last = lineIndex == conv.lines.Length;
-            bool canSteal = lineIndex == conv.lines.Length - 1 && filters > 0;
+            bool beforeLast = lineIndex == conv.lines.Length - 1;
+            bool canSteal = beforeLast && filters > 0;
             convItem = conv.itemGiven;
+
+            if (beforeLast && convIndex == npcData.conversations.Length - 1 && npcData.isSpeedwagon)
+            {
+                Player.Oxygen.RefillOxygen(100);
+            }
 
             if (last)
             {
@@ -81,20 +88,24 @@ public class NPC : MonoBehaviour
         if (flirty)
         {
             stealBonus += 2;
+            MainUIController.ConversationManager.SetConversationText(npcData.npcIconSprite, "Te veo con otros ojos...", true, true);
             return true;
         }
         stealBonus -= 2;
+        MainUIController.ConversationManager.SetConversationText(npcData.npcIconSprite, "¡Ni en sueños!", false);
         return false;
     }
 
     public bool Threaten()
     {
-        if (!flirty)
+        if (coward)
         {
             stealBonus += 2;
+            MainUIController.ConversationManager.SetConversationText(npcData.npcIconSprite, "Perdón, no quiero problemas.", true, true);
             return true;
         }
         stealBonus -= 2;
+        MainUIController.ConversationManager.SetConversationText(npcData.npcIconSprite, "¿Tú y cuántos más?", false);
         return false;
     }
 
@@ -114,8 +125,12 @@ public class NPC : MonoBehaviour
         if (result >= stealDifficultyD20)
         {
             filters--;
-            return math.clamp(result * 5, 50, 90);
+            result = math.clamp(result * 5, 50, 90);
+            MainUIController.ConversationManager.SetConversationText(null, $"<i>CONSEGUISTE UN FILTRO AL {result}%</i>", false);
+            return result;
         }
+        MainUIController.ConversationManager.SetConversationText(npcData.npcIconSprite, "¡Un poco de respeto!", false);
+        stealBonus -= 1;
         return 0;
     }
 
