@@ -55,7 +55,7 @@ public class NPCData
     public Conversation[] conversations;
     public bool isItem;
     public bool isSpeedwagon;
-
+    public AudioClip npcSound;
 }
 
 [Serializable]

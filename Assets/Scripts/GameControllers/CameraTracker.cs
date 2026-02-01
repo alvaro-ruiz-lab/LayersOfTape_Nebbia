@@ -10,7 +10,8 @@ public class CameraTracker : MonoBehaviour
 
     private void Start()
     {
-        target = Player.Instance.transform;
+        if (Player.Instance != null)
+            target = Player.Instance.transform;
     }
 
 

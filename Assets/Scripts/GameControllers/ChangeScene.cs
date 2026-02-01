@@ -12,6 +12,18 @@ public class ChangeScene : MonoBehaviour
         print("Trigger entered by: " + other.name);
         if (other.CompareTag("Player"))
         {
+            //-------------------------------
+            // BYPASS TEMPORAL
+            if (targetSceneName != "OutDoor" || targetSceneName != "Hall")
+            {
+                return;
+            }
+
+            PlayerData.lastScene = targetSceneName;
+            SceneManager.LoadScene(targetSceneName);
+            return;
+            //-------------------------------
+
             if (targetSceneName == "SecretChamber")
             {
                 bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnPB;

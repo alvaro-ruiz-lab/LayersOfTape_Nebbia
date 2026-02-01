@@ -13,10 +13,14 @@ public class GameStarter : MonoBehaviour
 
     private IEnumerator LoadGame()
     {
-        AudioController.PlayInitMusic();
+        AudioController.PlayMusic("MainLoop");
+        AudioController.PlayEnvSound(null, 1);
+        AudioController.PlayEnvSound(null, 2);
+
         yield return new WaitForSeconds(2.5f);
 
-        Debug.Log("Loading Hall Scene...");
+        if (Player.Oxygen != null)
+            Player.Oxygen.RefillOxygen(100f);
 
         SceneManager.LoadScene("OutDoor");
     }
