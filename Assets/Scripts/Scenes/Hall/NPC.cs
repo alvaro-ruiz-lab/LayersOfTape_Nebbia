@@ -1,4 +1,5 @@
 using System;
+using AlvaroRuiz.Projects.GameControll.Audio;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -32,6 +33,7 @@ public class NPC : MonoBehaviour
         {
             if (lineIndex == 0)
             {
+                AudioController.PlaySFX(npcData.npcSound);
                 Player.Instance.isTalking = true;
             }
             // can only happen if loopConversation is true and the NPC has already said all of their lines

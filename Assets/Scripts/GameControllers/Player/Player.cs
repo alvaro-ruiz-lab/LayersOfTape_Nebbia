@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
     // SFX
     [Header("SFX")]
     [SerializeField] private AudioClip walkClip;
+    [SerializeField] private AudioClip interactClip;
+    [SerializeField] private AudioClip cancelClip;
 
     // Propiedades
     public static Player Instance { get; private set; }
@@ -87,7 +89,7 @@ public class Player : MonoBehaviour
         {
             // Activar animacion de movimiento y sonido
             animator.SetTrigger("Move");
-            AudioController.PlaySound(walkClip);
+            AudioController.PlaySFX(walkClip);
 
             // Mover personaje
             var direction = inputDirection.normalized;
@@ -191,25 +193,17 @@ public class Player : MonoBehaviour
         //Debug.Log("Interacted");
         if (isTalking)
         {
+            AudioController.PlaySFX(interactClip);
             talkableNPC.Talk();
         }
         else if (talkableNPC)
         {
+            AudioController.PlaySFX(interactClip);
             TalkToNPC(talkableNPC);
         }
         else if (canVeredict)
         {
-            StartCoroutine(LoadVeredict());
+            SceneManager.LoadScene("EndGameVeredict");
         }
-    }
-
-    private IEnumerator LoadVeredict()
-    {
-        AudioController.PlayInitMusic();
-        yield return new WaitForSeconds(2.5f);
-
-        Debug.Log("Loading Veredict Scene...");
-
-        SceneManager.LoadScene("EndGameVeredict");
     }
 }

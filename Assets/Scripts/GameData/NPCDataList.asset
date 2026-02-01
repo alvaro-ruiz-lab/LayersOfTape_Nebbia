@@ -68,6 +68,7 @@ MonoBehaviour:
       itemGiven: 
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: 76ec14f3a60f9d34e81635a61652117f, type: 3}
   - name: Spett Atore
     loopConversation: 0
     npcIconSprite: {fileID: 290574897, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -110,6 +111,7 @@ MonoBehaviour:
       itemGiven: 
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: 3766b47de3d2e1a409a501081d1743af, type: 3}
   - name: Ino Zente
     loopConversation: 0
     npcIconSprite: {fileID: 417831001, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -129,6 +131,7 @@ MonoBehaviour:
       itemGiven: "SpettDi\xE1logo"
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: f41fec55e5e2e10449a052a4bd16ddec, type: 3}
   - name: Terza Parte
     loopConversation: 0
     npcIconSprite: {fileID: -2208447157699951675, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -148,6 +151,7 @@ MonoBehaviour:
       itemGiven: 
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: 707ea3e070baa664ea486b3c713f2c08, type: 3}
   - name: Tria Mitto
     loopConversation: 0
     npcIconSprite: {fileID: 4217578736160866412, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -175,6 +179,7 @@ MonoBehaviour:
       itemGiven: 
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: 18250b9065a0dbf488d304d04a95bdaf, type: 3}
   - name: Dio
     loopConversation: 1
     npcIconSprite: {fileID: -3238489975912758830, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -196,6 +201,7 @@ MonoBehaviour:
       itemGiven: "Dio-Testi-Di\xE1logo"
     isItem: 0
     isSpeedwagon: 0
+    npcSound: {fileID: 8300000, guid: e4f55d6b93fde81438c44ffe2b249653, type: 3}
   - name: Speedwagon
     loopConversation: 1
     npcIconSprite: {fileID: -6651149882663238023, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
@@ -224,6 +230,7 @@ MonoBehaviour:
       itemGiven: 
     isItem: 0
     isSpeedwagon: 1
+    npcSound: {fileID: 8300000, guid: 803605e4efe58254bbae4e16010bf47f, type: 3}
   - name: ITEM_INO
     loopConversation: 0
     npcIconSprite: {fileID: 0}
@@ -235,6 +242,7 @@ MonoBehaviour:
       itemGiven: ITEM_INO
     isItem: 1
     isSpeedwagon: 0
+    npcSound: {fileID: 0}
   - name: ITEM_TRIA
     loopConversation: 0
     npcIconSprite: {fileID: 0}
@@ -247,3 +255,4 @@ MonoBehaviour:
       itemGiven: ITEM_TRIA
     isItem: 1
     isSpeedwagon: 0
+    npcSound: {fileID: 0}

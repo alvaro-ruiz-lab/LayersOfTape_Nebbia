@@ -13,7 +13,10 @@ public class GameStarter : MonoBehaviour
 
     private IEnumerator LoadGame()
     {
-        AudioController.PlayMainMusic("MainLoop");
+        AudioController.PlayMusic("MainLoop");
+        AudioController.PlayEnvSound(null, 1);
+        AudioController.PlayEnvSound(null, 2);
+
         yield return new WaitForSeconds(2.5f);
 
         Player.Oxygen.RefillOxygen(100f);
