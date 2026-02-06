@@ -5,28 +5,26 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private string targetSceneName;
 
+    // Control global de si se puede cambiar de escena
+    public static bool CanChangeScene = false;
 
-
-    private void OnTriggerEnter2D (Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!CanChangeScene) return; // Si no está permitido, salir
+
         print("Trigger entered by: " + other.name);
         if (other.CompareTag("Player"))
         {
-
             if (targetSceneName == "SecretChamber")
             {
                 bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnPB;
-
-                if (!isOnCorrectLayer)
-                    return;
+                if (!isOnCorrectLayer) return;
             }
 
             if (targetSceneName == "ToxicRoom" || targetSceneName == "PrivateRoom")
             {
                 bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnP1;
-
-                if (!isOnCorrectLayer)
-                    return;
+                if (!isOnCorrectLayer) return;
             }
 
             PlayerData.lastScene = targetSceneName;

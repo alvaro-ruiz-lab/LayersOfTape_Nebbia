@@ -59,10 +59,24 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Start()
+  //SPAWN DE PLAYER EN CADA ESCENA
+    void OnEnable()
     {
-        // Init pos en cada escena
-        transform.position = new Vector2(0, 0);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        var spawn = GameObject.FindGameObjectWithTag("PlayerSpawn");
+        if (spawn != null)
+        {
+            transform.position = spawn.transform.position;
+        }
     }
 
 
