@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6268f41e191930243913701782e55053
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 955865946347880698
+    second: E_interactuar_0
+  - first:
+      213: 8545507081284671304
+    second: E_interactuar_1
+  - first:
+      213: 8623077516996347422
+    second: E_interactuar_2
+  - first:
+      213: -1948075925128328109
+    second: E_interactuar_3
+  - first:
+      213: 5576113007414990379
+    second: E_interactuar_4
+  - first:
+      213: 6296758579961045111
+    second: E_interactuar_5
+  - first:
+      213: -7248433522711240879
+    second: E_interactuar_6
+  - first:
+      213: -1168325934879819717
+    second: E_interactuar_7
+  - first:
+      213: -2932210075308470053
+    second: E_interactuar_8
+  - first:
+      213: -6463332843773401630
+    second: E_interactuar_9
+  - first:
+      213: -4124082024155533431
+    second: E_interactuar_10
+  - first:
+      213: 5961273331141677204
+    second: E_interactuar_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: E_interactuar_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 978
+        width: 3614
+        height: 2619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af045f8830be34d00800000000000000
+      internalID: 955865946347880698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_1
+      rect:
+        serializedVersion: 2
+        x: 4184
+        y: 1926
+        width: 363
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847de851a6db79670800000000000000
+      internalID: 8545507081284671304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_2
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16893f80535ba770800000000000000
+      internalID: 8623077516996347422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_3
+      rect:
+        serializedVersion: 2
+        x: 5608
+        y: 1926
+        width: 633
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c4c37744b07f4e0800000000000000
+      internalID: -1948075925128328109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_4
+      rect:
+        serializedVersion: 2
+        x: 6411
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26d76a9c35526d40800000000000000
+      internalID: 5576113007414990379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_5
+      rect:
+        serializedVersion: 2
+        x: 7213
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770a8fa1194926750800000000000000
+      internalID: 6296758579961045111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_6
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f53cc6d14686b90800000000000000
+      internalID: -7248433522711240879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_7
+      rect:
+        serializedVersion: 2
+        x: 8817
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38bc9590c549cfe0800000000000000
+      internalID: -1168325934879819717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_8
+      rect:
+        serializedVersion: 2
+        x: 9617
+        y: 1926
+        width: 633
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0da66d872be47d0800000000000000
+      internalID: -2932210075308470053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_9
+      rect:
+        serializedVersion: 2
+        x: 10420
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e565c5d501ad46a0800000000000000
+      internalID: -6463332843773401630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_10
+      rect:
+        serializedVersion: 2
+        x: 11222
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fa2a5df3154c6c0800000000000000
+      internalID: -4124082024155533431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_interactuar_11
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 1926
+        width: 632
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49095bfa282bab250800000000000000
+      internalID: 5961273331141677204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      E_interactuar_0: 955865946347880698
+      E_interactuar_1: 8545507081284671304
+      E_interactuar_10: -4124082024155533431
+      E_interactuar_11: 5961273331141677204
+      E_interactuar_2: 8623077516996347422
+      E_interactuar_3: -1948075925128328109
+      E_interactuar_4: 5576113007414990379
+      E_interactuar_5: 6296758579961045111
+      E_interactuar_6: -7248433522711240879
+      E_interactuar_7: -1168325934879819717
+      E_interactuar_8: -2932210075308470053
+      E_interactuar_9: -6463332843773401630
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
