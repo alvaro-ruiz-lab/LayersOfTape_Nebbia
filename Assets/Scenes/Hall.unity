@@ -26346,11 +26346,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: coward
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: flirty
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2275571039880403379, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: m_Size.y
@@ -26433,6 +26433,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: coward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: flirty
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: filters
       value: 2
@@ -57900,6 +57908,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1849572819}
     m_Modifications:
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: coward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: flirty
       value: 0
       objectReference: {fileID: 0}
@@ -80111,6 +80123,10 @@ PrefabInstance:
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: coward
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
+      propertyPath: flirty
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1678337019768997051, guid: 4ccf017a9102a7d47b0b9a50b1288848, type: 3}
       propertyPath: npcName
