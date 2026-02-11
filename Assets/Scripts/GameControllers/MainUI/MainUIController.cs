@@ -40,6 +40,9 @@ public class MainUIController : MonoBehaviour
 
     public void RestartGame()
     {
+        // TODO limpiar inventario
+        // TODO resetear dialogos NPC
+        // TODO reponer items?
         gameOverPanel.SetActive(false);
         Player.Oxygen.RefillOxygen(100);
         SceneManager.LoadScene("Start");

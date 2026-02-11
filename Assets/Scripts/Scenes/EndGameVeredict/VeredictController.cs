@@ -20,43 +20,37 @@ public class VeredictController : MonoBehaviour
 
 
 
-    private IEnumerator LoadHall()
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        Debug.Log("Loading Hall Scene...");
-
-        Player.Instance.gameObject.SetActive(true);
-        SceneManager.LoadScene("Hall");
-    }
-
-    
-
     public void CallVeredict()
     {
-        StartCoroutine(LoadHall());
-        return;
-
         foreach (Suspect suspect in suspects)
         {
             bool found = UniversalGameController.ItemData.TryGetByName(suspect.clue?.clueName, out var itemData);
             if (!found || itemData.associatedNPC != suspect.suspectName)
             {
-                LoadDefeat();
+                ShowDefeat();
             }
         }
-        LoadVictory();
+        ShowVictory();
     }
 
-
-
-    private void LoadDefeat()
+    private void ShowDefeat()
     {
         losePanel.SetActive(true);
     }
 
-    private void LoadVictory()
+    private void ShowVictory()
     {
         winPanel.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        MainUIController.Instance.RestartGame();
+    }
+
+    public void BackToHall()
+    {
+        Player.Instance.gameObject.SetActive(true);
+        SceneManager.LoadScene("Hall");
     }
 }
