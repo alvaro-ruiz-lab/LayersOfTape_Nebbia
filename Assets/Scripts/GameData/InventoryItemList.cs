@@ -52,6 +52,7 @@ public class InventoryItemList : ScriptableObject
 public class InventoryItem
 {
     public string itemName;
+    [TextArea(1, 3)]
     public string acquittedConclusion;
     public string associatedNPC;
     public bool good = true;

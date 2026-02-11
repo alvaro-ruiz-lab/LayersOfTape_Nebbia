@@ -19,41 +19,47 @@ MonoBehaviour:
     associatedNPC: Ino Zente
     good: 1
     showOnInventory: 1
-    itemSprite: {fileID: 1208040086343421634, guid: 07013271d3e914247b1b851aaf3a3735, type: 3}
-  - itemName: TriaCarta
+    itemSprite: {fileID: 9190445966138690890, guid: ab5a38d656b1bc945876b5f9dbca7018, type: 3}
+  - itemName: ITEM_TRIA
     acquittedConclusion: "Est\xE1 lesionado, no puede levantar peso."
     associatedNPC: Tria Mitto
     good: 1
     showOnInventory: 1
-    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - itemName: InoCarta
+    itemSprite: {fileID: 7615192909518954084, guid: ab5a38d656b1bc945876b5f9dbca7018, type: 3}
+  - itemName: ITEM_INO
     acquittedConclusion: Una carta que revela su amor pasional por Litto.
     associatedNPC: Ino Zente
     good: 0
     showOnInventory: 1
-    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    itemSprite: {fileID: 7615192909518954084, guid: ab5a38d656b1bc945876b5f9dbca7018, type: 3}
   - itemName: "Dio-Testi-Di\xE1logo"
     acquittedConclusion: "Dio se acost\xF3 durante tres horas con Testi."
     associatedNPC: Dio
     good: 1
     showOnInventory: 0
-    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    itemSprite: {fileID: 680767890, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
   - itemName: "SpettDi\xE1logo"
     acquittedConclusion: "Ino cree que oculta sus intenciones a trav\xE9s de sus
       acusaciones."
     associatedNPC: Spett Atore
     good: 0
     showOnInventory: 0
-    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    itemSprite: {fileID: -840075579, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
   - itemName: Terza-Speed-Hat
     acquittedConclusion: "No saldr\xEDa fuera sin su sombrero. Lo ten\xEDa Speedwagon."
     associatedNPC: Terza Parte
     good: 1
+    showOnInventory: 0
+    itemSprite: {fileID: -2208447157699951675, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+  - itemName: TerzaLibros
+    acquittedConclusion: "Esos libros ol\xEDan muy mal."
+    associatedNPC: Terza Parte
+    good: 0
     showOnInventory: 1
-    itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - itemName: testiConvTape
-    acquittedConclusion: "No saldr\xEDa fuera sin su sombrero. Lo ten\xEDa Speedwagon."
+    itemSprite: {fileID: -499579455, guid: e79d9313cc4f4fe4794272215e3f062d, type: 3}
+  - itemName: TestiArmas
+    acquittedConclusion: "\xBFQui\xE9n necesita tantas armas?"
     associatedNPC: Testi Mone
-    good: 1
+    good: 0
     showOnInventory: 1
-    itemSprite: {fileID: 1208040086343421634, guid: 07013271d3e914247b1b851aaf3a3735, type: 3}
+    itemSprite: {fileID: 8111327147376163596, guid: 9346a4b4f4db2b7458155d154052d5e0, type: 3}
