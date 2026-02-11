@@ -148,7 +148,7 @@ public class Player : MonoBehaviour
     void PickUpItem(SceneItem item)
     {
         string name = item.ItemName;
-        StoreConversation(name);
+        StoreItem(name);
         item.gameObject.SetActive(false);
         MainUIController.UIInventoryManager.AddIventoryItem(name);
         // TODO Agregar al Inventario(UI). Crear una instancia del prefab UIItem con el nombre del item.
@@ -156,14 +156,40 @@ public class Player : MonoBehaviour
 
     private void TalkToNPC(NPC npc)
     {
-        var conversationItem = npc.Talk();
-        if (!string.IsNullOrWhiteSpace(conversationItem)) StoreConversation(conversationItem);
+        StoreItem(npc.Talk());
     }
 
     // For converasion (items). conversationName must match with InventoryItem.itemName
-    void StoreConversation(string name)
+    void StoreItem(string itemName)
     {
-        PlayerData.itemsNamesInventory.Add(name);
+        if (string.IsNullOrWhiteSpace(itemName)) return;
+
+        string item, o2;
+        if (itemName.Contains(','))
+        {
+            var split = itemName.Split(',');
+            item = split[0];
+            o2 = split[1];
+        }
+        else
+        {
+            item = o2 = itemName;
+        }
+
+        if (o2.Contains('+'))
+        {
+            var split = itemName.Split('+');
+            if (split[0] == "oxygen")
+            {
+                int refill = Convert.ToInt32(split[1]);
+                oxygen.RefillOxygen(refill);
+                MainUIController.ConversationManager.SetConversationText(null, $"<i>CONSEGUISTE UN FILTRO AL {refill}%</i>", false);
+            }
+        }
+        if (!item.Equals(o2))
+        {
+            PlayerData.itemsNamesInventory.Add(itemName);
+        }
     }
 
     public void Seduce()
@@ -184,8 +210,8 @@ public class Player : MonoBehaviour
         {
             TalkToNPC(talkableNPC);
         }
-        // 10% is the worse quality mask filter  possibly provided, but currently we are clamping it between 50 and 90 at the NPC level.
-        else if (result > 9)
+
+        else if (result > 0)
         {
             oxygen.RefillOxygen(result);
             Debug.Log("You stole " + result + " oxygen from the NPC!");
@@ -209,7 +235,7 @@ public class Player : MonoBehaviour
         {
             if (talkableNPC)
             {
-                talkableNPC.Talk();
+                StoreItem(talkableNPC.Talk());
             }
             else
             {

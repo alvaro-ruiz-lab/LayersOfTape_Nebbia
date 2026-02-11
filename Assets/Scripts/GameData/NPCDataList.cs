@@ -61,6 +61,7 @@ public class NPCData
 [Serializable]
 public class Conversation
 {
+    [TextArea(1, 3)]
     public string[] lines;
     public string itemGiven;
 }

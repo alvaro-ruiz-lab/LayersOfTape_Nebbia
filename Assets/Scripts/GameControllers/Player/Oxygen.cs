@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Oxygen : MonoBehaviour
@@ -29,6 +30,8 @@ public class Oxygen : MonoBehaviour
 
     public void RefillOxygen(float amount)
     {
-        oxygenLevel = amount / 100f;
+        // Refill a percentage of what's missing so that it's not so easy to get 100%
+        var refill = (1 - oxygenLevel) * amount / 100f;
+        oxygenLevel = math.clamp(refill + oxygenLevel, refill, 1);
     }
 }

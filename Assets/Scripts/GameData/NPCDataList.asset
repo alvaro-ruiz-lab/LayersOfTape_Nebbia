@@ -65,7 +65,7 @@ MonoBehaviour:
       - Hace un rato.
       - "Ya sabes, no pod\xEDa decirle que no a ese apuesto vampiro."
       - Toma, gracias por escucharme.
-      itemGiven: 
+      itemGiven: oxygen+60
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: 76ec14f3a60f9d34e81635a61652117f, type: 3}
@@ -108,7 +108,7 @@ MonoBehaviour:
       - "Nadie sabe muy bien de d\xF3nde sale la fortuna incre\xEDble de Speedwagon,"
       - "ni cuales son sus m\xE9todos."
       - "Ten cuidado, o no saldr\xE1s vivo."
-      itemGiven: 
+      itemGiven: oxygen+40
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: 3766b47de3d2e1a409a501081d1743af, type: 3}
@@ -128,7 +128,7 @@ MonoBehaviour:
       - "Sin embargo, el s-s-se\xF1or Spett Atore calumnia a cualquiera."
       - Seguro que lo hace para disimular.
       - "Por favor, t-t-t\xF3melo. Ha sido muy am-m-m-mable conmigo. <i>(solloza)<i>"
-      itemGiven: "SpettDi\xE1logo"
+      itemGiven: "SpettDi\xE1logo,oxygen+20"
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: f41fec55e5e2e10449a052a4bd16ddec, type: 3}
@@ -148,7 +148,7 @@ MonoBehaviour:
       - Ha estado de nueve a once sin parar de contar trapos sucios de los presentes.
       - "Ay\xFAdeme a encontrar mi sombrero, seguro que Speedwagon sabe algo."
       - "Esto le ser\xE1 \xFAtil."
-      itemGiven: 
+      itemGiven: oxygen+15
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: 707ea3e070baa664ea486b3c713f2c08, type: 3}
@@ -176,7 +176,7 @@ MonoBehaviour:
       itemGiven: 
     - lines:
       - "\xA1Pi, pi, Pir\xE1mideeeeeee \u266B!"
-      itemGiven: 
+      itemGiven: oxygen+70
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: 18250b9065a0dbf488d304d04a95bdaf, type: 3}
@@ -198,7 +198,7 @@ MonoBehaviour:
       - De nueve a once hemos tenido un encuentro suculento.
       - "Para que no me molestes m\xE1s."
       - "Ahora, m\xE1rchate."
-      itemGiven: "Dio-Testi-Di\xE1logo"
+      itemGiven: "Dio-Testi-Di\xE1logo,oxygen+10"
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: e4f55d6b93fde81438c44ffe2b249653, type: 3}
@@ -227,7 +227,7 @@ MonoBehaviour:
         muy avispada."
       - "\xA1Una peque\xF1a broma no le hace da\xF1o a nadie!"
       - Por las molestias.
-      itemGiven: 
+      itemGiven: oxygen+100
     isItem: 0
     isSpeedwagon: 1
     npcSound: {fileID: 8300000, guid: 803605e4efe58254bbae4e16010bf47f, type: 3}
