@@ -11,11 +11,12 @@ public class NPC : MonoBehaviour
     private static readonly int ChangeSprite = Animator.StringToHash("ChangeSprite");
     [SerializeField] private string npcName;
     private int lineIndex;
+    [NonSerialized] public int currentConversationIndex;
     private NPCData npcData;
     [SerializeField] private Sprite secondarySprite;
     [SerializeField] private Sprite tertiarySprite;
     [SerializeField] public int filters = 1;
-    [SerializeField] private int stealDifficultyD20 = 11;
+    [SerializeField] private int stealDifficultyD20 = 13;
     [SerializeField] private bool flirty = true;
     [SerializeField] private bool coward;
     private int stealBonus;
@@ -23,7 +24,6 @@ public class NPC : MonoBehaviour
     private bool laughing;
     [SerializeField] Animator terzaAnimator;
     [SerializeField] AudioClip laughTrack;
-    [NonSerialized] public int currentConversationIndex;
 
 
 
@@ -40,11 +40,14 @@ public class NPC : MonoBehaviour
         {
             if (lineIndex == 0)
             {
-                AudioController.PlaySFX(npcData.npcSound);
                 Player.Instance.isTalking = true;
+                if (!laughing)
+                {
+                    AudioController.PlaySFX(npcData.npcSound);
+                }
             }
             // can only happen if loopConversation is true and the NPC has already said all of their lines
-            if (convIndex == -1)
+            if (npcData.loopConversation && convIndex == -1)
             {
                 convIndex = 0;
             }
@@ -52,16 +55,13 @@ public class NPC : MonoBehaviour
             bool last = lineIndex == conv.lines.Length;
             bool beforeLast = lineIndex == conv.lines.Length - 1;
             bool canSteal = beforeLast && filters > 0;
-            convItem = conv.itemGiven;
 
-            if (beforeLast && convIndex == npcData.conversations.Length - 1 && npcData.isSpeedwagon)
+            if (beforeLast)
             {
-                Player.Oxygen.RefillOxygen(100);
+                convItem = conv.itemGiven;
             }
-
             if (last)
             {
-                lineIndex = 0;
                 IncreaseConvIndex();
                 MainUIController.ConversationManager.EndConversation();
             }
@@ -76,11 +76,22 @@ public class NPC : MonoBehaviour
 
     private void IncreaseConvIndex()
     {
+        lineIndex = 0;
+
         // Speedwagon's last conversation is unlocked by stealing twice.
-        if (npcData.isSpeedwagon && laughing && currentConversationIndex == npcData.conversations.Length - 1)
+        if (npcData.isSpeedwagon)
         {
-            ChangeToTerciarySprite();
-            currentConversationIndex = -1;
+            if (laughing && currentConversationIndex == npcData.conversations.Length - 1)
+            {
+                ChangeToTerciarySprite();
+                currentConversationIndex = -1;
+                return;
+            }
+            if (currentConversationIndex == npcData.conversations.Length - 2)
+            {
+                currentConversationIndex = -1;
+                return;
+            }
         }
 
         if (currentConversationIndex < npcData.conversations.Length - 1)
@@ -126,6 +137,7 @@ public class NPC : MonoBehaviour
         if (timesStolen == 2 && npcData.isSpeedwagon)
         {
             currentConversationIndex = npcData.conversations.Length - 1;
+            lineIndex = 0;
             filters--;
             ChangeToSecondaryLaughSprite();
             return 100;

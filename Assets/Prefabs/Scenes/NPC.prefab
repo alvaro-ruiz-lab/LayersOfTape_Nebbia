@@ -172,6 +172,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Testi Mone
   secondarySprite: {fileID: 0}
+  tertiarySprite: {fileID: 0}
   filters: 1
-  stealDifficultyD20: 11
+  stealDifficultyD20: 13
   flirty: 1
+  coward: 0
+  terzaAnimator: {fileID: 0}
+  laughTrack: {fileID: 0}
