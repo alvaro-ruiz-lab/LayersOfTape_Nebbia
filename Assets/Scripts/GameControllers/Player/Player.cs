@@ -190,8 +190,8 @@ public class Player : MonoBehaviour
 
         if (item != null)
         {
-            PlayerData.itemsNamesInventory.Add(itemName);
-            MainUIController.UIInventoryManager.AddIventoryItem(itemName);
+            PlayerData.itemsNamesInventory.Add(item);
+            MainUIController.UIInventoryManager.AddIventoryItem(item);
         }
     }
 
