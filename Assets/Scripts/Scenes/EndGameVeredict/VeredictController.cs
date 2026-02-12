@@ -24,7 +24,8 @@ public class VeredictController : MonoBehaviour
     {
         foreach (Suspect suspect in suspects)
         {
-            bool found = UniversalGameController.ItemData.TryGetByName(suspect.clue?.clueName, out var itemData);
+            var clue = suspect.GetComponentInChildren<Clue>();
+            bool found = UniversalGameController.ItemData.TryGetByName(clue?.clueName, out var itemData);
             if (!found || itemData.associatedNPC != suspect.suspectName || !itemData.good)
             {
                 ShowDefeat();

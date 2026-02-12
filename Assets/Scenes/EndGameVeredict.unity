@@ -1262,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: orthographic size
-      value: 2.25
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -2757,7 +2757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 677719380928903467, guid: 877eba64f43851240bedd9d312378d4c, type: 3}
       propertyPath: suspectName
-      value: 'Tria Mitto '
+      value: Tria Mitto
       objectReference: {fileID: 0}
     - target: {fileID: 2113681782725682226, guid: 877eba64f43851240bedd9d312378d4c, type: 3}
       propertyPath: m_Name

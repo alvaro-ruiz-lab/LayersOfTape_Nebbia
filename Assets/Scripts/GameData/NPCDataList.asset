@@ -128,7 +128,7 @@ MonoBehaviour:
       - "Sin embargo, el s-s-se\xF1or Spett Atore calumnia a cualquiera."
       - Seguro que lo hace para disimular.
       - "Por favor, t-t-t\xF3melo. Ha sido muy am-m-m-mable conmigo. <i>(solloza)<i>"
-      itemGiven: "SpettDi\xE1logo,oxygen+20"
+      itemGiven: "InoDi\xE1logo,oxygen+20"
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: f41fec55e5e2e10449a052a4bd16ddec, type: 3}
@@ -143,12 +143,12 @@ MonoBehaviour:
     - lines:
       - "Maldito Speedwagon, s\xE9 que oculta algo, pero no tengo c\xF3mo demostrarlo."
       - "Ojal\xE1 alguien pudiera sonsacarle lo que esconde."
-      - "Adem\xE1s, Spetta me lo ha contado todo."
+      - "Adem\xE1s, Spett me lo ha contado todo."
       - Cuando digo todo, es <b>TODO<b>.
       - Ha estado de nueve a once sin parar de contar trapos sucios de los presentes.
       - "Ay\xFAdeme a encontrar mi sombrero, seguro que Speedwagon sabe algo."
       - "Esto le ser\xE1 \xFAtil."
-      itemGiven: oxygen+15
+      itemGiven: "TerzaDi\xE1logo,oxygen+15"
     isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 8300000, guid: 707ea3e070baa664ea486b3c713f2c08, type: 3}
@@ -227,7 +227,7 @@ MonoBehaviour:
         muy avispada."
       - "\xA1Una peque\xF1a broma no le hace da\xF1o a nadie!"
       - Por las molestias.
-      itemGiven: oxygen+100
+      itemGiven: Terza-Speed-Hat,oxygen+100
     isItem: 0
     isSpeedwagon: 1
     npcSound: {fileID: 8300000, guid: 803605e4efe58254bbae4e16010bf47f, type: 3}

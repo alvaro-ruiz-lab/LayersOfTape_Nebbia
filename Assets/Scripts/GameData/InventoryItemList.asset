@@ -38,7 +38,7 @@ MonoBehaviour:
     good: 1
     showInInventory: 0
     itemSprite: {fileID: 680767890, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
-  - itemName: "SpettDi\xE1logo"
+  - itemName: "InoDi\xE1logo"
     acquittedConclusion: "Ino cree que oculta sus intenciones a trav\xE9s de sus
       acusaciones."
     associatedNPC: Spett Atore
@@ -63,3 +63,9 @@ MonoBehaviour:
     good: 0
     showInInventory: 1
     itemSprite: {fileID: 8111327147376163596, guid: 9346a4b4f4db2b7458155d154052d5e0, type: 3}
+  - itemName: "TerzaDi\xE1logo"
+    acquittedConclusion: Estuvo de nueve a once sin parar de hablar.
+    associatedNPC: Spett Atore
+    good: 1
+    showInInventory: 0
+    itemSprite: {fileID: -2208447157699951675, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
