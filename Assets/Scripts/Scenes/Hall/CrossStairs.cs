@@ -2,43 +2,21 @@ using UnityEngine;
 
 public class CrossStairs : MonoBehaviour
 {
-    [SerializeField] private BoxCollider2D myCollider;
+    private BoxCollider2D myTrigger;
+    private ColliderHeightHandler handler;
 
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Awake()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            UpdatePlayerLayer(collision);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            UpdatePlayerLayer(collision);
-        }
+        myTrigger = GetComponent<BoxCollider2D>();
+        handler = GetComponentInParent<ColliderHeightHandler>();
     }
 
 
 
-    private void UpdatePlayerLayer(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        // Sacar pos de player y trigger
-        float thisColliderCenterY = myCollider.bounds.center.y;
-        float playerCenterY = collision.bounds.center.y;
-
-        bool isDowning = playerCenterY > thisColliderCenterY;
-
-        int newLayer = isDowning ? PlayerData.layerOnPB : PlayerData.layerOnP1;
-
-        if (Player.Instance.GetComponent<SpriteRenderer>().sortingOrder != newLayer)
-        {
-            print($"Order layer de player {Player.Instance.GetComponent<SpriteRenderer>().sortingOrder}");
-            Player.Instance.GetComponent<SpriteRenderer>().sortingOrder = newLayer;
-            print($"NEW Order layer de player {Player.Instance.GetComponent<SpriteRenderer>().sortingOrder}");
-        }
+        handler.HandlePlayerExitStairs(myTrigger, other);
     }
 }

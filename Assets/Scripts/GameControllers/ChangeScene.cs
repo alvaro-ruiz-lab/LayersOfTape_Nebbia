@@ -7,6 +7,12 @@ public class ChangeScene : MonoBehaviour
 
     // Control global de si se puede cambiar de escena
     public static bool CanChangeScene = false;
+    private SpriteRenderer playerSprite;
+
+    private void Start()
+    {
+        playerSprite = Player.Instance.GetComponent<SpriteRenderer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,13 +23,13 @@ public class ChangeScene : MonoBehaviour
         {
             if (targetSceneName == "SecretChamber")
             {
-                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnPB;
+                bool isOnCorrectLayer = playerSprite.sortingOrder <= PlayerData.layerOnPB;
                 if (!isOnCorrectLayer) return;
             }
 
             if (targetSceneName == "ToxicRoom" || targetSceneName == "PrivateRoom")
             {
-                bool isOnCorrectLayer = Player.Instance.gameObject.layer <= PlayerData.layerOnP1;
+                bool isOnCorrectLayer = playerSprite.sortingOrder >= PlayerData.layerOnP1;
                 if (!isOnCorrectLayer) return;
             }
 
