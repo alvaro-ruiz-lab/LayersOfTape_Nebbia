@@ -76,5 +76,4 @@ crashlytics-build.properties
 
 # JetBrains Rider
 *.idea
-Assets/TextMesh Pro/Resources/Fonts & Materials/Skranji-Regular SDF.asset
-Assets/TextMesh Pro/Resources/Fonts & Materials/Skranji-Regular-OUTLINE SDF.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/*.asset
