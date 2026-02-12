@@ -278,3 +278,20 @@ MonoBehaviour:
     isItem: 1
     isSpeedwagon: 0
     npcSound: {fileID: 0}
+  - name: ITEM_INO
+    loopConversation: 0
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - "<i>\"No s\xE9 c\xF3mo decirte esto, pero mis sentimientos por ti han cambiado.
+        Quiz\xE1s es por tu melodiosa voz...\"<i>"
+      - "<i>\"Antes me parec\xEDas alguien despreciable, pero tengo que confesarte
+        que tengo una obsesi\xF3n contigo. Sue\xF1o cada noche con poder compartir
+        un instante a tu lado.\"<i>"
+      - "<i>\"S\xE9 que no ser\xE9 correspondida. A\xFAn as\xED, mi coraz\xF3n estar\xE1
+        disponible para ti siempre que lo desees. Toda tuya, Ino.\"<i>"
+      - "<i>Su pasi\xF3n es desbordante, ella amaba a Litto de verdad.<i>"
+      itemGiven: ITEM_INO
+    isItem: 1
+    isSpeedwagon: 0
+    npcSound: {fileID: 0}
