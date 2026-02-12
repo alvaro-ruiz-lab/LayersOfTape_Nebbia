@@ -56,7 +56,7 @@ public class NPC : MonoBehaviour
             bool beforeLast = lineIndex == conv.lines.Length - 1;
             bool canSteal = beforeLast && filters > 0;
 
-            if (beforeLast)
+            if (beforeLast && !npcName.Contains("fake", StringComparison.OrdinalIgnoreCase))
             {
                 convItem = conv.itemGiven;
             }
@@ -64,6 +64,10 @@ public class NPC : MonoBehaviour
             {
                 IncreaseConvIndex();
                 MainUIController.ConversationManager.EndConversation();
+                if (npcData.isItem)
+                {
+                    gameObject.SetActive(false);
+                }
             }
             else
             {

@@ -27,7 +27,6 @@ public class PlayerConversationTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // TODO quizás manejar race condition  && Player.PI.currentActionMap.name == "Player" pero tener en cuenta que el exit se tiene que ejecutar después
         if (other.TryGetComponent(out NPC npc) && npc == playerScript.talkableNPC)
         {
             playerScript.talkableNPC = null;

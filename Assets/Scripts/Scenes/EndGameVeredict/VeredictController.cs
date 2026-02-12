@@ -25,9 +25,10 @@ public class VeredictController : MonoBehaviour
         foreach (Suspect suspect in suspects)
         {
             bool found = UniversalGameController.ItemData.TryGetByName(suspect.clue?.clueName, out var itemData);
-            if (!found || itemData.associatedNPC != suspect.suspectName)
+            if (!found || itemData.associatedNPC != suspect.suspectName || !itemData.good)
             {
                 ShowDefeat();
+                return;
             }
         }
         ShowVictory();
@@ -45,6 +46,7 @@ public class VeredictController : MonoBehaviour
 
     public void RestartGame()
     {
+        Player.Instance.gameObject.SetActive(true);
         MainUIController.Instance.RestartGame();
     }
 

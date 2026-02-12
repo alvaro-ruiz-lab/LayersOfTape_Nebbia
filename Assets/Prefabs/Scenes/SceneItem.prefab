@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6695319759255462023}
   - component: {fileID: 4847039479293876007}
-  - component: {fileID: 5699250663446255733}
+  - component: {fileID: 1937069095239285388}
   m_Layer: 0
   m_Name: SceneItem
   m_TagString: Untagged
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5699250663446255733
+--- !u!114 &1937069095239285388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +97,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 9202847352281354390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c33727936bbb488290ac5bbae9157d55, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ab760813c9ad9948a69417de8cef1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Cuchillo
+  npcName: Cuchillo
+  secondarySprite: {fileID: 0}
+  tertiarySprite: {fileID: 0}
+  filters: 0
+  stealDifficultyD20: 100
+  flirty: 0
+  coward: 0
+  terzaAnimator: {fileID: 0}
+  laughTrack: {fileID: 0}

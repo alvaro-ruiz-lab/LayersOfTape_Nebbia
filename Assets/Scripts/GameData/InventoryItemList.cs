@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "InventoryItemList", menuName = "Scriptable Objects/InventoryItemList")]
 public class InventoryItemList : ScriptableObject
@@ -56,6 +57,6 @@ public class InventoryItem
     public string acquittedConclusion;
     public string associatedNPC;
     public bool good = true;
-    public bool showOnInventory;
+    public bool showInInventory;
     public Sprite itemSprite;
 }

@@ -90,7 +90,7 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         public static void PlaySFX(AudioClip newSoundClip)
         {
             // Si es el mismo clip y todavia esta sonando, no repetir
-            if (currentSFXClip == newSoundClip && Time.time < currentSFXClipEndTime) return;
+            if (!newSoundClip || (currentSFXClip == newSoundClip && Time.time < currentSFXClipEndTime)) return;
 
             currentSFXClip = newSoundClip;
             currentSFXClipEndTime = Time.time + newSoundClip.length;

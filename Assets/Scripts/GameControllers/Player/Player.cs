@@ -144,39 +144,37 @@ public class Player : MonoBehaviour
 
 
     // INTERACTIONS
-    // For tangible items
-    void PickUpItem(SceneItem item)
-    {
-        string name = item.ItemName;
-        StoreItem(name);
-        item.gameObject.SetActive(false);
-        MainUIController.UIInventoryManager.AddIventoryItem(name);
-        // TODO Agregar al Inventario(UI). Crear una instancia del prefab UIItem con el nombre del item.
-    }
-
     private void TalkToNPC(NPC npc)
     {
         StoreItem(npc.Talk());
     }
 
     // For converasion (items). conversationName must match with InventoryItem.itemName
+    // Supports refilling oxygen with the format oxygen+50
+    // When NPC gives an item and oxygen, itemName is in the format conversationName,oxygen+50
+    // TODO in the future we can simplify this a lot by adding another field to the NPC conversation to specify oxygen refill
     void StoreItem(string itemName)
     {
         if (string.IsNullOrWhiteSpace(itemName)) return;
 
-        string item, o2;
+        string item = null, o2 = null;
         if (itemName.Contains(','))
         {
             var split = itemName.Split(',');
             item = split[0];
             o2 = split[1];
         }
+        else if (itemName.Contains("oxygen+"))
+        {
+            o2 = itemName;
+        }
         else
         {
-            item = o2 = itemName;
+            item = itemName;
         }
 
-        if (o2.Contains('+'))
+
+        if (o2 != null)
         {
             var split = itemName.Split('+');
             if (split[0] == "oxygen")
@@ -186,9 +184,11 @@ public class Player : MonoBehaviour
                 MainUIController.ConversationManager.SetConversationText(null, $"<i>CONSEGUISTE UN FILTRO AL {refill}%</i>", false);
             }
         }
-        if (!item.Equals(o2))
+
+        if (item != null)
         {
             PlayerData.itemsNamesInventory.Add(itemName);
+            MainUIController.UIInventoryManager.AddIventoryItem(itemName);
         }
     }
 

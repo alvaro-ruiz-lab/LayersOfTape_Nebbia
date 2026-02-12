@@ -231,7 +231,7 @@ MonoBehaviour:
     isItem: 0
     isSpeedwagon: 1
     npcSound: {fileID: 8300000, guid: 803605e4efe58254bbae4e16010bf47f, type: 3}
-  - name: ITEM_INO
+  - name: InoPastillas
     loopConversation: 0
     npcIconSprite: {fileID: 0}
     conversations:
@@ -239,7 +239,7 @@ MonoBehaviour:
       - "<i><b>Antidepresivos<b>. Hay una etiqueta: Ino Zente. En la prescripci\xF3n
         dice que hay que reposar durante tres horas. Cobra sentido sentido que est\xE9
         tan inquieta.<i>"
-      itemGiven: ITEM_INO
+      itemGiven: InoPastillas
     isItem: 1
     isSpeedwagon: 0
     npcSound: {fileID: 0}
@@ -253,6 +253,28 @@ MonoBehaviour:
       - "<i>Por lo visto, Tria tiene una lesi\xF3n que <b>le impide levantar peso<b>
         desde hace unos d\xEDas.<i>"
       itemGiven: ITEM_TRIA
+    isItem: 1
+    isSpeedwagon: 0
+    npcSound: {fileID: 0}
+  - name: TerzaLibros
+    loopConversation: 0
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - "<i>Est\xE1n manchados y parece que han sido usados hace poco. Tienen el
+        exlibris de Terza.<i>"
+      itemGiven: TerzaLibros
+    isItem: 1
+    isSpeedwagon: 0
+    npcSound: {fileID: 0}
+  - name: TestiArmas
+    loopConversation: 0
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - "<i>Aqu\xED hay armas para acabar con toda la fiesta y est\xE1n a nombre
+        de Testi.<i>"
+      itemGiven: TestiArmas
     isItem: 1
     isSpeedwagon: 0
     npcSound: {fileID: 0}

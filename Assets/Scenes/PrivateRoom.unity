@@ -935,7 +935,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.28749, y: -0.032710075}
+  m_Offset: {x: -0.28749, y: 0.26408267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -945,7 +945,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.42501998, y: 1.0654202}
+  m_Size: {x: 0.42501998, y: 0.47183466}
   m_EdgeRadius: 0
 --- !u!1 &541438345
 GameObject:
@@ -10935,7 +10935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618560791}
   m_Layer: 0
-  m_Name: InteractuableObjects
+  m_Name: InteractableObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23114,6 +23114,26 @@ PrefabInstance:
     - target: {fileID: 5807797260594383355, guid: 7356047935054ab45a3e77603829972a, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: orthographic size
+      value: 1.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779012043442155291, guid: 7356047935054ab45a3e77603829972a, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38008,6 +38028,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 618560791}
     m_Modifications:
+    - target: {fileID: 1937069095239285388, guid: 742f435f7cedbae4298c955aba3f283d, type: 3}
+      propertyPath: npcName
+      value: ITEM_INO
+      objectReference: {fileID: 0}
     - target: {fileID: 4847039479293876007, guid: 742f435f7cedbae4298c955aba3f283d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -38076,6 +38100,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 618560791}
     m_Modifications:
+    - target: {fileID: 1937069095239285388, guid: 742f435f7cedbae4298c955aba3f283d, type: 3}
+      propertyPath: npcName
+      value: TestiArmas
+      objectReference: {fileID: 0}
     - target: {fileID: 4847039479293876007, guid: 742f435f7cedbae4298c955aba3f283d, type: 3}
       propertyPath: m_Size.x
       value: 0.48
@@ -50615,7 +50643,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.21343511, y: 0}
+  m_Offset: {x: 0.0052951276, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -50625,7 +50653,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.90687, y: 0.36}
+  m_Size: {x: 0.49059004, y: 0.36}
   m_EdgeRadius: 0
 --- !u!1 &1922899978
 GameObject:

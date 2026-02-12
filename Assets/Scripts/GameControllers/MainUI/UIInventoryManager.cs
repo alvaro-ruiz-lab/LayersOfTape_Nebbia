@@ -8,7 +8,10 @@ public class UIInventoryManager : MonoBehaviour
 
     public void AddIventoryItem(string newItemName)
     {
-        GameObject newItem = Instantiate(UIItemPrefab, transform);
-        newItem.GetComponent<UIItem>().SetItemData(newItemName);
+        if (UniversalGameController.ItemData.TryGetByName(newItemName, out var itemData) && itemData.showInInventory)
+        {
+            GameObject newItem = Instantiate(UIItemPrefab, transform);
+            newItem.GetComponent<UIItem>().SetItemData(newItemName);
+        }
     }
 }
