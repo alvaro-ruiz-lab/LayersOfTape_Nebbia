@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: c7ce258440bdec949b5675fe44d77205
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2415376288185999697
+    second: r_robar_0
+  - first:
+      213: 677496389074857706
+    second: r_robar_1
+  - first:
+      213: 1540678295196019439
+    second: r_robar_2
+  - first:
+      213: -7129119059274604434
+    second: r_robar_3
+  - first:
+      213: -7989707596326928856
+    second: r_robar_4
+  - first:
+      213: 1181163132731476053
+    second: r_robar_5
+  - first:
+      213: -7602046514266180833
+    second: r_robar_6
+  - first:
+      213: 2295680953060953905
+    second: r_robar_7
+  - first:
+      213: 3103541758450600880
+    second: r_robar_8
+  - first:
+      213: -7808429729206073126
+    second: r_robar_9
+  - first:
+      213: -156119112743543652
+    second: r_robar_10
+  - first:
+      213: -7607275325233490222
+    second: r_robar_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: r_robar_0
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1006
+        width: 3561
+        height: 2576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae95c7201cda7ed0800000000000000
+      internalID: -2415376288185999697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_1
+      rect:
+        serializedVersion: 2
+        x: 4206
+        y: 1931
+        width: 626
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeaa675063f66900800000000000000
+      internalID: 677496389074857706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_2
+      rect:
+        serializedVersion: 2
+        x: 5001
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea20522fb6916510800000000000000
+      internalID: 1540678295196019439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_3
+      rect:
+        serializedVersion: 2
+        x: 5795
+        y: 1931
+        width: 626
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60687ebcf7401d90800000000000000
+      internalID: -7129119059274604434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_4
+      rect:
+        serializedVersion: 2
+        x: 6590
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e71bdb54bde1190800000000000000
+      internalID: -7989707596326928856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_5
+      rect:
+        serializedVersion: 2
+        x: 7384
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5584f347c95546010800000000000000
+      internalID: 1181163132731476053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_6
+      rect:
+        serializedVersion: 2
+        x: 8179
+        y: 1931
+        width: 626
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13fa2ff8fa108690800000000000000
+      internalID: -7602046514266180833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_7
+      rect:
+        serializedVersion: 2
+        x: 8973
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f04dce9a5ebdf10800000000000000
+      internalID: 2295680953060953905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_8
+      rect:
+        serializedVersion: 2
+        x: 9768
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb0a0a39cef11b20800000000000000
+      internalID: 3103541758450600880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_9
+      rect:
+        serializedVersion: 2
+        x: 10561
+        y: 1931
+        width: 627
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad882193882e2a390800000000000000
+      internalID: -7808429729206073126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_10
+      rect:
+        serializedVersion: 2
+        x: 11357
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c954e7e7a55ddf0800000000000000
+      internalID: -156119112743543652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r_robar_11
+      rect:
+        serializedVersion: 2
+        x: 12151
+        y: 1931
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d61dd295678d6690800000000000000
+      internalID: -7607275325233490222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      r_robar_0: -2415376288185999697
+      r_robar_1: 677496389074857706
+      r_robar_10: -156119112743543652
+      r_robar_11: -7607275325233490222
+      r_robar_2: 1540678295196019439
+      r_robar_3: -7129119059274604434
+      r_robar_4: -7989707596326928856
+      r_robar_5: 1181163132731476053
+      r_robar_6: -7602046514266180833
+      r_robar_7: 2295680953060953905
+      r_robar_8: 3103541758450600880
+      r_robar_9: -7808429729206073126
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
