@@ -77,6 +77,9 @@ public class Player : MonoBehaviour
         {
             transform.position = spawn.transform.position;
         }
+
+        // Cambiar audio ambiental según la escena
+        AudioController.SetEnvironmentAudioForScene(scene.name);
     }
 
 

@@ -10,12 +10,17 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource environmentSource1;
         [SerializeField] private AudioSource environmentSource2;
+        [SerializeField] private AudioSource environmentSource3;
         [SerializeField] private AudioSource sFXSource;
 
         // Instancias
         /* Referencias de los clips */
         [Header("Clips de Musica")]
         [SerializeField] private AudioClip mainLoopMusicClip;
+
+        [Header("Clips de Ambiente")]
+        [SerializeField] private AudioClip windLoopClosedClip;
+        [SerializeField] private AudioClip windLoopOpenClip;
 
         // Variables necesarias
         private static AudioClip currentSFXClip;
@@ -26,6 +31,7 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
         public static AudioSource MusicSource => Instance.musicSource;
         public static AudioSource EnvironmentSource1 => Instance.environmentSource1;
         public static AudioSource EnvironmentSource2 => Instance.environmentSource2;
+        public static AudioSource EnvironmentSource3 => Instance.environmentSource3;
         public static AudioSource SFXSource => Instance.sFXSource;
 
 
@@ -72,6 +78,7 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
             {
                 1 => EnvironmentSource1,
                 2 => EnvironmentSource2,
+                3 => EnvironmentSource3,
                 _ => null
             };
 
@@ -84,6 +91,21 @@ namespace AlvaroRuiz.Projects.GameControll.Audio
 
             // Si clip null, se usa el asignado en inspector
             source.Play();
+        }
+
+        // Cambiar audio ambiental según la escena
+        public static void SetEnvironmentAudioForScene(string sceneName)
+        {
+            switch (sceneName)
+            {
+                case "Hall":
+                case "PrivateRoom":
+                    PlayEnvSound(Instance.windLoopClosedClip, 3);
+                    break;
+                case "ToxicRoom":
+                    PlayEnvSound(Instance.windLoopOpenClip, 3);
+                    break;
+            }
         }
 
         // Usar SFX
