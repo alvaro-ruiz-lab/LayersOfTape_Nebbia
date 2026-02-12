@@ -179,7 +179,7 @@ public class Player : MonoBehaviour
 
         if (o2 != null)
         {
-            var split = itemName.Split('+');
+            var split = o2.Split('+');
             if (split[0] == "oxygen")
             {
                 int refill = Convert.ToInt32(split[1]);
