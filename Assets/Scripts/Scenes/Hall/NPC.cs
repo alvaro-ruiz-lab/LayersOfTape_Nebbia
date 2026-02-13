@@ -110,6 +110,15 @@ public class NPC : MonoBehaviour
 
     public bool Seduce()
     {
+        if (npcName.Equals("Litto", StringComparison.OrdinalIgnoreCase))
+    {
+        MainUIController.ConversationManager.SetConversationText(
+            npcData.npcIconSprite,
+            "<i>No te juzgo, pero de poco sirve.</i>",
+            false
+        );
+        return false;
+    }
         if (flirty)
         {
             stealBonus += 2;
@@ -123,6 +132,16 @@ public class NPC : MonoBehaviour
 
     public bool Threaten()
     {
+         if (npcName.Equals("Litto", StringComparison.OrdinalIgnoreCase))
+    {
+        MainUIController.ConversationManager.SetConversationText(
+            npcData.npcIconSprite,
+            "<i>Bastante tiene con estar muerto, mejor busca dentro de la mansión.<i>",
+            false
+        );
+        return false;
+    }
+
         if (coward)
         {
             stealBonus += 2;

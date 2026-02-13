@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Oxygen : MonoBehaviour
 {
-    private float oxygenLevel = 1f;
+    private float oxygenLevel = 0.2f;
     [SerializeField] private float consumptionTime;
 
 

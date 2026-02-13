@@ -65,6 +65,7 @@ MonoBehaviour:
       - Hace un rato.
       - "Ya sabes, no pod\xEDa decirle que no a ese apuesto vampiro."
       - Toma, gracias por escucharme.
+      - Toma, gracias por escucharme.
       itemGiven: oxygen+60
     isItem: 0
     isSpeedwagon: 0
@@ -108,6 +109,7 @@ MonoBehaviour:
       - "Nadie sabe muy bien de d\xF3nde sale la fortuna incre\xEDble de Speedwagon,"
       - "ni cuales son sus m\xE9todos."
       - "Ten cuidado, o no saldr\xE1s vivo."
+      - "Ten cuidado, o no saldr\xE1s vivo."
       itemGiven: oxygen+40
     isItem: 0
     isSpeedwagon: 0
@@ -128,6 +130,7 @@ MonoBehaviour:
       - "Sin embargo, el s-s-se\xF1or Spett Atore calumnia a cualquiera."
       - Seguro que lo hace para disimular.
       - "Por favor, t-t-t\xF3melo. Ha sido muy am-m-m-mable conmigo. <i>(solloza)<i>"
+      - "Por favor, t-t-t\xF3melo. Ha sido muy am-m-m-mable conmigo. <i>(solloza)<i>"
       itemGiven: "InoDi\xE1logo,oxygen+20"
     isItem: 0
     isSpeedwagon: 0
@@ -147,6 +150,7 @@ MonoBehaviour:
       - Cuando digo todo, es <b>TODO<b>.
       - Ha estado de nueve a once sin parar de contar trapos sucios de los presentes.
       - "Ay\xFAdeme a encontrar mi sombrero, seguro que Speedwagon sabe algo."
+      - "Esto le ser\xE1 \xFAtil."
       - "Esto le ser\xE1 \xFAtil."
       itemGiven: "TerzaDi\xE1logo,oxygen+15"
     isItem: 0
@@ -176,6 +180,7 @@ MonoBehaviour:
       itemGiven: 
     - lines:
       - "\xA1Pi, pi, Pir\xE1mideeeeeee \u266B!"
+      - "\xA1Pi, pi, Pir\xE1mideeeeeee \u266B!"
       itemGiven: oxygen+70
     isItem: 0
     isSpeedwagon: 0
@@ -197,6 +202,7 @@ MonoBehaviour:
       - "<i>Wry...<i> Rechazo mi miedo por el placer con gente como \xE9l."
       - De nueve a once hemos tenido un encuentro suculento.
       - "Para que no me molestes m\xE1s."
+      - "Ahora, m\xE1rchate."
       - "Ahora, m\xE1rchate."
       itemGiven: "Dio-Testi-Di\xE1logo,oxygen+10"
     isItem: 0
@@ -226,6 +232,7 @@ MonoBehaviour:
       - "Quer\xEDa ver cu\xE1ndo se daba cuenta Terza de que yo lo ten\xEDa. No es
         muy avispada."
       - "\xA1Una peque\xF1a broma no le hace da\xF1o a nadie!"
+      - Por las molestias.
       - Por las molestias.
       itemGiven: Terza-Speed-Hat,oxygen+100
     isItem: 0
@@ -293,5 +300,25 @@ MonoBehaviour:
       - "<i>Su pasi\xF3n es desbordante, ella amaba a Litto de verdad.<i>"
       itemGiven: ITEM_INO
     isItem: 1
+    isSpeedwagon: 0
+    npcSound: {fileID: 0}
+  - name: FakeTrigger
+    loopConversation: 1
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - <i>Nada en especial.<i>
+      itemGiven: 
+    isItem: 0
+    isSpeedwagon: 0
+    npcSound: {fileID: 0}
+  - name: Litto
+    loopConversation: 1
+    npcIconSprite: {fileID: 0}
+    conversations:
+    - lines:
+      - "<i>Litto no dir\xE1 nada. Tampoco es que pueda.<i>"
+      itemGiven: 
+    isItem: 0
     isSpeedwagon: 0
     npcSound: {fileID: 0}
