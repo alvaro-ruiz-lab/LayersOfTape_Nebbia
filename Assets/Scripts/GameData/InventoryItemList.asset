@@ -21,7 +21,7 @@ MonoBehaviour:
     showInInventory: 1
     itemSprite: {fileID: 9190445966138690890, guid: ab5a38d656b1bc945876b5f9dbca7018, type: 3}
   - itemName: ITEM_TRIA
-    acquittedConclusion: "Est\xE1 lesionado, no puede levantar peso."
+    acquittedConclusion: "Tiene una lesi\xF3n, no puede levantar peso."
     associatedNPC: Tria Mitto
     good: 1
     showInInventory: 1
@@ -33,18 +33,18 @@ MonoBehaviour:
     showInInventory: 1
     itemSprite: {fileID: 7615192909518954084, guid: ab5a38d656b1bc945876b5f9dbca7018, type: 3}
   - itemName: "Dio-Testi-Di\xE1logo"
-    acquittedConclusion: "Dio se acost\xF3 durante tres horas con Testi."
+    acquittedConclusion: Se acostaron durante tres horas.
     associatedNPC: Dio
     good: 1
     showInInventory: 0
-    itemSprite: {fileID: 680767890, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    itemSprite: {fileID: 21300000, guid: d941fc7fe5790e64faf56f221fb7c1e8, type: 3}
   - itemName: "InoDi\xE1logo"
     acquittedConclusion: "Ino cree que oculta sus intenciones a trav\xE9s de sus
       acusaciones."
     associatedNPC: Spett Atore
     good: 0
     showInInventory: 0
-    itemSprite: {fileID: -1960687393, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    itemSprite: {fileID: 21300000, guid: d941fc7fe5790e64faf56f221fb7c1e8, type: 3}
   - itemName: Terza-Speed-Hat
     acquittedConclusion: "No saldr\xEDa fuera sin su sombrero. Lo ten\xEDa Speedwagon."
     associatedNPC: Terza Parte
@@ -68,4 +68,4 @@ MonoBehaviour:
     associatedNPC: Spett Atore
     good: 1
     showInInventory: 0
-    itemSprite: {fileID: -2208447157699951675, guid: 36fb40b6b3a3b25488ad6417b653785f, type: 3}
+    itemSprite: {fileID: 21300000, guid: d941fc7fe5790e64faf56f221fb7c1e8, type: 3}
